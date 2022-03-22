@@ -1,3 +1,4 @@
+from mmap import ACCESS_DEFAULT
 from pygame import *
 from constants import *
 
@@ -23,9 +24,12 @@ class Body():
         force = GRAVITY * other.mass * self.mass / vec.length()**2
         self.acceleration.x += vec.x * force
         self.acceleration.y += vec.y * force
+
+    def distance(self, other:super):
+        return (other.position - self.position).length()
         
 
-
+    
     
 
     def get_image():
