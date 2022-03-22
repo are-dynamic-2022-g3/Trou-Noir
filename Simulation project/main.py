@@ -75,7 +75,6 @@ def main():
 
           if b.distance(other) < (b.size + other.size)/30:
             b.position = (b.position + other.position)/2
-            b.velocity = (b.velocity + other.velocity)/2
             b.mass += other.mass
             b.size += other.size
             bodies.remove(other)
