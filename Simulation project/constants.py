@@ -1,1 +1,1 @@
-GRAVITY = 10e-2
+GRAVITY = 10
