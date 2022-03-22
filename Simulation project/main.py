@@ -32,8 +32,8 @@ def main():
   is_clicking = False
   cursors_body:Body = Body(mass = 1e8)
 
-  number_of_stars = 10
-  size_min, size_max = 5, 50
+  number_of_stars = 50
+  size_min, size_max = 2, 10
   vmin, vmax = 5, 20
 
   #Generate random stars with parameters below
