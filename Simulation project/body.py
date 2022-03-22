@@ -1,4 +1,3 @@
-from mmap import ACCESS_DEFAULT
 from pygame import *
 from constants import *
 
