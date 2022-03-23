@@ -1,10 +1,10 @@
 #Simulation constants
-GRAVITY = 1000
+GRAVITY = 10
 UPDATE_RATE = 1e-8
 ticks_per_seconds = 20
 
 #Simulation parameters
-number_of_stars = 200
+number_of_stars = 400
 size_min, size_max = 1, 10
 vmin, vmax = 5, 20
 blur_movement = True #Better performance

@@ -35,10 +35,13 @@ def main():
   run = True
   is_clicking = False
   cursors_body:Body = Body(mass = 1e15)
+  ticks = 0
 
-  font = pygame.font.Font('freesansbold.ttf', 32)
+  font = pygame.font.Font('freesansbold.ttf', 16)
+  
+  text = font.render(f'FPS : N/A', True, green, blue)
   textRect = text.get_rect()
-  textRect.center = (0, 0)
+  textRect.center = (50, 20)
 
   
 
@@ -56,7 +59,11 @@ def main():
 
 
   while run:
-    clock.tick(144)
+    ticks %= 60
+    ticks += 1
+    
+
+    clock.tick(60)
 
     cursors_body.position = Vector2(pygame.mouse.get_pos())
 
@@ -79,35 +86,39 @@ def main():
 
 
     #Apply forces
-    for b in bodies:
-      b.acceleration = Vector2(0, 0)
-      other:Body
-      for other in bodies:
-        if b != other:
-          b.apply_force_toward(other)
+    if ticks % 6 == 1:
+      for b in bodies:
+        b.acceleration = Vector2(0, 0)
+        other:Body
+        for other in bodies:
+          if b != other and b.distance(other) < 500:
 
-          #Fusion
-          if b.distance(other) < (b.size + other.size)/30:
-            if b.size < other.size:
-              temp = b
-              other = b
-              b = temp
-            b.position = (b.position + other.position)/2
-            b.mass += other.mass
-            b.size += other.size
-            bodies.remove(other)
-          
+            b.apply_force_toward(other)
 
-      if is_clicking:
-        b.apply_force_toward(cursors_body)
+            #Fusion
+            if b.distance(other) < (b.size + other.size)/30:
+              if b.size < other.size:
+                temp = b
+                other = b
+                b = temp
+              b.position = (b.position + other.position)/2
+              b.mass += other.mass
+              b.size += other.size
+              bodies.remove(other)
+            
 
-      apply_edge(b)
-      b.update(UPDATE_RATE)
+        if is_clicking:
+          b.apply_force_toward(cursors_body)
+
+        apply_edge(b)
+      
       
     for b in bodies:
+      b.update(UPDATE_RATE)
       draw_body(window, b)
 
-    text = font.render(f'FPS : {clock.get_fps}', True, green, blue)
+    if ticks == 1:
+      text = font.render(f'FPS : {int(clock.get_fps())}|N = {len(bodies)}', True, white, black)
     window.blit(text, textRect)
       
       
