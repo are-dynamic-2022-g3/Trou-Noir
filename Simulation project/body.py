@@ -1,4 +1,5 @@
-from mmap import ACCESS_DEFAULT
+from random import *
+from typing import Tuple
 from pygame import *
 from constants import *
 
@@ -28,9 +29,7 @@ class Body():
     def distance(self, other:super) -> float:
         return (other.position - self.position).length()
         
-
-    
-    
-
     def get_image():
         pass
+
+    
