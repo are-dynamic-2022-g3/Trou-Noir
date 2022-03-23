@@ -5,7 +5,7 @@ STARS_LIMITS = 25
 
 
 #Simulation parameters
-number_of_stars = 100
+number_of_stars = 500
 
 size_min, size_max = 1, 10
 vmin, vmax = 5, 20

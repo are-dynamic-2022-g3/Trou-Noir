@@ -1,5 +1,6 @@
-from multiprocessing import Event
-from random import randint, random, randrange
+from pickletools import TAKEN_FROM_ARGUMENT1
+from numba import jit, cuda
+from random import randint, random
 import pygame
 from pygame import gfxdraw
 from typing import List
@@ -20,10 +21,9 @@ def apply_edge(b:Body) -> None:
   elif b.position.y + b.size < 0:
      b.velocity.y *= -1
 
-
 def draw_body(screen:Surface, b:Body) -> None:
-  apply_edge(b)
-  gfxdraw.filled_circle(screen, int(b.position.x), int(b.position.y), int(b.size), b.color)
+  gfxdraw.aacircle(screen, int(b.position.x), int(b.position.y), int(b.size), b.color)
+
 
 def main():
   #pygame initialisation
@@ -87,9 +87,12 @@ def main():
 
 
     #Apply forces
-    l = range() if len(bodies) > STARS_LIMITS else range(len(bodies))
+    parts = len(bodies) // STARS_LIMITS
+    l = range(STARS_LIMITS * (ticks % parts),\
+       min(len(bodies), STARS_LIMITS * (1 + (ticks % parts))))\
+          if len(bodies) > STARS_LIMITS \
+            else range(len(bodies))
     for i in l:
-      print(f"{i} < {len(bodies)}")
       if i >= len(bodies):
         continue
       b = bodies[i]

@@ -19,7 +19,7 @@ class Body():
         
         self.position.x += self.velocity.x * delta
         self.position.y += self.velocity.y * delta
-
+ 
     def apply_force_toward(self, other:super) -> None:
         vec:Vector2 = other.position - self.position
         force = GRAVITY * other.mass/ vec.length()**2
