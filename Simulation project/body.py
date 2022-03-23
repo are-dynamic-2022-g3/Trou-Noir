@@ -19,13 +19,13 @@ class Body():
         self.position.x += self.velocity.x * delta
         self.position.y += self.velocity.y * delta
 
-    def apply_force_toward(self, other:super):
+    def apply_force_toward(self, other:super) -> None:
         vec:Vector2 = other.position - self.position
-        force = GRAVITY * other.mass * self.mass / vec.length()**2
+        force = GRAVITY * other.mass / vec.length()**2
         self.acceleration.x += vec.x * force
         self.acceleration.y += vec.y * force
 
-    def distance(self, other:super):
+    def distance(self, other:super) -> float:
         return (other.position - self.position).length()
         
 
