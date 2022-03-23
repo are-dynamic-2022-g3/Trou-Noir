@@ -22,6 +22,7 @@ def apply_edge(b:Body) -> None:
 
 
 def draw_body(screen:Surface, b:Body) -> None:
+  apply_edge(b)
   gfxdraw.filled_circle(screen, int(b.position.x), int(b.position.y), int(b.size), b.color)
 
 def main():
@@ -86,38 +87,45 @@ def main():
 
 
     #Apply forces
-    if ticks % 6 == 1:
-      for b in bodies:
-        b.acceleration = Vector2(0, 0)
-        other:Body
-        for other in bodies:
-          if b != other and b.distance(other) < 500:
+    l = range() if len(bodies) > STARS_LIMITS else range(len(bodies))
+    for i in l:
+      print(f"{i} < {len(bodies)}")
+      if i >= len(bodies):
+        continue
+      b = bodies[i]
+      b.acceleration = Vector2(0, 0)
+      other:Body
 
-            b.apply_force_toward(other)
+      if is_clicking:
+            b.apply_force_toward(cursors_body)
+      for other in bodies:
+        if b != other and b.distance(other) < 500:
 
-            #Fusion
-            if b.distance(other) < (b.size + other.size)/30:
-              if b.size < other.size:
-                temp = b
-                other = b
-                b = temp
-              b.position = (b.position + other.position)/2
-              b.mass += other.mass
-              b.size += other.size
-              bodies.remove(other)
-            
+          
 
-        if is_clicking:
-          b.apply_force_toward(cursors_body)
+          b.apply_force_toward(other)
 
-        apply_edge(b)
+          #Fusion
+          if b.distance(other) < (b.size + other.size)/30:
+            if b.size < other.size:
+              temp = b
+              other = b
+              b = temp
+            b.position = (b.position + other.position)/2
+            b.mass += other.mass
+            b.size += other.size
+            bodies.remove(other)
+          
+
+      
       
       
     for b in bodies:
       b.update(UPDATE_RATE)
+      apply_edge(b)
       draw_body(window, b)
 
-    if ticks == 1:
+    if ticks%20 == 1:
       text = font.render(f'FPS : {int(clock.get_fps())}|N = {len(bodies)}', True, white, black)
     window.blit(text, textRect)
       

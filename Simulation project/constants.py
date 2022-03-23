@@ -1,13 +1,15 @@
 #Simulation constants
 GRAVITY = 10
 UPDATE_RATE = 1e-8
-ticks_per_seconds = 20
+STARS_LIMITS = 25
+
 
 #Simulation parameters
-number_of_stars = 400
+number_of_stars = 100
+
 size_min, size_max = 1, 10
 vmin, vmax = 5, 20
-blur_movement = True #Better performance
+blur_movement = True
 
 #colors
 red = (255, 0, 0)
