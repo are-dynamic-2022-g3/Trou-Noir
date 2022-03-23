@@ -1,14 +1,15 @@
+from multiprocessing import Event
 from random import randint, random, randrange
 import pygame
 from pygame import gfxdraw
-import math
 from typing import List
 
+from vfx import *
 from body import *
 
 SCREEN_WIDTH, SCREEN_HEIGHT = (1600,1000)
 
-def apply_edge(b:Body):
+def apply_edge(b:Body) -> None:
   if b.position.x - b.size > SCREEN_WIDTH:
     b.velocity.x *= -1
   elif b.position.x + b.size < 0:
@@ -20,6 +21,8 @@ def apply_edge(b:Body):
      b.velocity.y *= -1
 
 
+def draw_body(screen:Surface, b:Body) -> None:
+  gfxdraw.filled_circle(screen, int(b.position.x), int(b.position.y), int(b.size), b.color)
 
 def main():
   #pygame initialisation
@@ -33,9 +36,11 @@ def main():
   is_clicking = False
   cursors_body:Body = Body(mass = 1e15)
 
-  number_of_stars = 5
-  size_min, size_max = 1, 10
-  vmin, vmax = 5, 20
+  font = pygame.font.Font('freesansbold.ttf', 32)
+  textRect = text.get_rect()
+  textRect.center = (0, 0)
+
+  
 
   #Generate random stars with parameters below
   for _ in range(number_of_stars):
@@ -55,20 +60,22 @@ def main():
 
     cursors_body.position = Vector2(pygame.mouse.get_pos())
 
-    #EVENT
+    #Handle events
     for event in pygame.event.get():
-      if event.type == pygame.QUIT:
+      #Quit
+      if event.type == pygame.QUIT: 
         run = False
-      if event.type == pygame.MOUSEBUTTONDOWN:
+
+      #Holding right click
+      if event.type == pygame.MOUSEBUTTONDOWN: 
         is_clicking = True
       if event.type == pygame.MOUSEBUTTONUP:
         is_clicking = False
 
-    fadein = pygame.Surface((SCREEN_WIDTH, SCREEN_HEIGHT))
-    fadein = fadein.convert()
-    fadein.fill((0, 0, 0))
-    fadein.set_alpha(127)
-    window.blit(fadein, (0, 0))
+    if blur_movement:
+      blur_screen(window)
+    else:
+      window.fill((0, 0, 0))
 
 
     #Apply forces
@@ -95,12 +102,14 @@ def main():
         b.apply_force_toward(cursors_body)
 
       apply_edge(b)
-
-      
       b.update(UPDATE_RATE)
       
     for b in bodies:
-      gfxdraw.circle(window, int(b.position.x), int(b.position.y), int(b.size), b.color)
+      draw_body(window, b)
+
+    text = font.render(f'FPS : {clock.get_fps}', True, green, blue)
+    window.blit(text, textRect)
+      
       
     pygame.display.flip()
 
