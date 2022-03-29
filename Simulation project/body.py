@@ -16,10 +16,12 @@ class Body():
         self.acceleration:Vector2 = acc
         self.mass = mass
         self.size = size
+        self.gfx_size = size
         self.color = color
         self.type:int = type
 
     def update(self, delta:float) -> None:
+        self.gfx_size += (- self.gfx_size + self.size) * delta * size_interpolation_speed
         self.velocity.x += self.acceleration.x * delta
         self.velocity.y += self.acceleration.y * delta
         

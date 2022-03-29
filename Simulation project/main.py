@@ -12,14 +12,18 @@ SCREEN_WIDTH, SCREEN_HEIGHT = (1600,1000)
 
 def apply_edge(b:Body) -> None:
   if b.position.x - b.size > SCREEN_WIDTH:
+    b.position.x = SCREEN_WIDTH + b.size
     b.velocity.x *= -1
   elif b.position.x + b.size < 0:
-      b.velocity.x *= -1
+    b.position.x = - b.size
+    b.velocity.x *= -1
 
   if b.position.y - b.size > SCREEN_HEIGHT:
+    b.position.y = SCREEN_HEIGHT + b.size
     b.velocity.y *= -1
   elif b.position.y + b.size < 0:
-     b.velocity.y *= -1
+    b.position.y = - b.size
+    b.velocity.y *= -1
 
 
 
@@ -104,20 +108,16 @@ def main():
       for other in bodies:
         if b != other and b.distance(other) < (b.size + other.size) * 3:
 
-          
-
           b.apply_force_toward(other)
 
-          #Fusion
-          if b.distance(other) < (b.size + other.size)/30:
+          #Merge
+          if b.distance(other) < (b.size + other.size)/15:
+            bigger, smaller = b, other
             if b.size < other.size:
-              temp = b
-              other = b
-              b = temp
-            b.position = (b.position + other.position)/2
-            b.mass += other.mass
-            b.size += other.size
-            bodies.remove(other)
+              smaller, bigger = b, other
+            bigger.mass += smaller.mass//3
+            bigger.size += smaller.size//3
+            bodies.remove(smaller)
           
 
       

@@ -1,13 +1,13 @@
 #Simulation constants
 GRAVITY = 10
 UPDATE_RATE = 1e-8
-STARS_LIMITS = 25
+STARS_LIMITS = 50
 
 
 #Simulation parameters
-number_of_stars = 2000
+number_of_stars = 500
 
-size_min, size_max = 1, 10
+size_min, size_max = 1, 5
 vmin, vmax = 5, 20
 blur_movement = True
 
@@ -18,4 +18,4 @@ blue = (0, 0, 255)
 white = (255, 255, 255)
 black = (0, 0, 0)
 
-
+size_interpolation_speed = 5*1e6
