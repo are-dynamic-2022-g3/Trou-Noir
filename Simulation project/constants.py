@@ -10,6 +10,7 @@ number_of_stars = 10
 
 size_min, size_max = 50, 150
 size_to_blackhole = 100
+lifespan_limit = 900 #ticks
 vmin, vmax = 5, 20
 blur_movement = True
 

@@ -1,10 +1,9 @@
 from random import *
 from typing import Tuple
-from prometheus_client import Enum
 from pygame import *
 from constants import *
 
-class BodyType(Enum):
+class BodyType():
     STAR = 0
     BLACKHOLE = 1
     OTHER = 2    
@@ -31,7 +30,9 @@ class Body():
         self.position.y += self.velocity.y * delta
 
         self.lifespan += 1
- 
+        if random() < (self.lifespan  - lifespan_limit)/100:
+            self.evolve()
+            
     def apply_force_toward(self, other:super) -> None:
         """Apply force toward another body"""
         vec:Vector2 = other.position - self.position
@@ -43,13 +44,13 @@ class Body():
         self.size = 0
 
     def become_blachole(self):
-        pass
-
+        self.type = BodyType.BLACKHOLE
+        
     def evolve(self):
         if self.size > size_to_blackhole:
-            self.become_blachole
+            self.become_blachole()
         else:
-            self.kill
+            self.kill()
 
     def distance(self, other:super) -> float:
         return (other.position - self.position).length()
