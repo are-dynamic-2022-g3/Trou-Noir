@@ -8,7 +8,7 @@ from typing import List
 from vfx import *
 from body import *
 
-SCREEN_WIDTH, SCREEN_HEIGHT = (1600,1000)
+
 
 def apply_edge(b:Body) -> None:
   if b.position.x - b.size > SCREEN_WIDTH:
@@ -67,15 +67,15 @@ def main():
     ticks %= 60
     ticks += 1
     
-
     clock.tick(60)
 
     cursors_body.position = Vector2(pygame.mouse.get_pos())
 
+    #===================================================================
     #Handle events
     for event in pygame.event.get():
       #Quit
-      if event.type == pygame.QUIT: 
+      if event.type == pygame.QUIT or (event.type == pygame.KEYUP and event.key == pygame.K_ESCAPE): 
         run = False
 
       #Holding right click
@@ -85,11 +85,11 @@ def main():
         is_clicking = False
 
     if blur_movement:
-      fade_screen(window)
+      fade_screen(window, color = "#1E000E")
     else:
       window.fill((0, 0, 0))
 
-
+    #===================================================================
     #Apply forces
     parts = len(bodies) // STARS_LIMITS
     l = range(STARS_LIMITS * (ticks % parts),\
@@ -118,16 +118,16 @@ def main():
             bigger.mass += smaller.mass//3
             bigger.size += smaller.size//3
             bodies.remove(smaller)
-          
 
-      
-      
-      
+    #===================================================================
+    #Simualate and draw bodies
     for b in bodies:
       b.update(UPDATE_RATE)
       apply_edge(b)
       draw_body(window, b)
 
+    #===================================================================
+    #Show fps 
     if ticks%20 == 1:
       text = font.render(f'FPS : {int(clock.get_fps())}|N = {len(bodies)}', True, white, black)
     window.blit(text, textRect)
