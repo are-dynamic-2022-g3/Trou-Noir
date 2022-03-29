@@ -5,7 +5,7 @@ STARS_LIMITS = 25
 
 
 #Simulation parameters
-number_of_stars = 500
+number_of_stars = 2000
 
 size_min, size_max = 1, 10
 vmin, vmax = 5, 20
@@ -18,7 +18,4 @@ blue = (0, 0, 255)
 white = (255, 255, 255)
 black = (0, 0, 0)
 
-class BodyType:
-    STAR = 0
-    BLACKHOLE = 1
-    OTHER = 2
+
