@@ -15,8 +15,6 @@ Syntax highlighted code block
 ## Header 2
 ### Header 3
 
-echo "Hello World" > index.html
-
 - Bulleted
 - List
 
