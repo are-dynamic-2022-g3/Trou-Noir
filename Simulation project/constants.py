@@ -9,6 +9,7 @@ SCREEN_WIDTH, SCREEN_HEIGHT = (1920,1080)
 number_of_stars = 10
 
 size_min, size_max = 50, 150
+size_to_blackhole = 100
 vmin, vmax = 5, 20
 blur_movement = True
 

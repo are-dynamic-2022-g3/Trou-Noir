@@ -42,8 +42,14 @@ class Body():
     def kill(self):
         self.size = 0
 
-    def evolve(self):
+    def become_blachole(self):
+        pass
 
+    def evolve(self):
+        if self.size > size_to_blackhole:
+            self.become_blachole
+        else:
+            self.kill
 
     def distance(self, other:super) -> float:
         return (other.position - self.position).length()
