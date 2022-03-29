@@ -8,7 +8,7 @@ SCREEN_WIDTH, SCREEN_HEIGHT = (1920,1080)
 #Simulation parameters
 number_of_stars = 500
 
-size_min, size_max = 3, 5
+size_min, size_max = 6, 18
 vmin, vmax = 5, 20
 blur_movement = True
 
@@ -19,4 +19,4 @@ blue = (0, 0, 255)
 white = (255, 255, 255)
 black = (0, 0, 0)
 
-size_interpolation_speed = 5*1e6
+size_interpolation_speed = 5*1e6 

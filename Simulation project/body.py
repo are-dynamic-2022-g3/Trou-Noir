@@ -22,7 +22,7 @@ class Body():
 
     def update(self, delta:float) -> None:
         """Update the body velocity, gfx size, and position"""
-        self.gfx_size += (- self.gfx_size + self.size) * delta * size_interpolation_speed
+        self.gfx_size += (- self.gfx_size + self.size) >> 2 # <=> divide by 4
         self.velocity.x += self.acceleration.x * delta
         self.velocity.y += self.acceleration.y * delta
         

@@ -11,6 +11,7 @@ from body import *
 
 
 def apply_edge(b:Body) -> None:
+  """
   if b.position.x - b.size > SCREEN_WIDTH:
     b.position.x = SCREEN_WIDTH + b.size
     b.velocity.x *= -1
@@ -24,6 +25,17 @@ def apply_edge(b:Body) -> None:
   elif b.position.y + b.size < 0:
     b.position.y = - b.size
     b.velocity.y *= -1
+  """
+  if b.position.x - b.size > SCREEN_WIDTH:
+    b.position.x = -b.size
+  elif b.position.x + b.size < 0:
+    b.position.x = SCREEN_WIDTH + b.size
+
+  if b.position.y - b.size > SCREEN_HEIGHT:
+    b.position.y = -b.size
+  elif b.position.y + b.size < 0:
+    b.position.y = SCREEN_HEIGHT + b.size
+
 
 
 
