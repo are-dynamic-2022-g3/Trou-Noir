@@ -2,12 +2,13 @@
 GRAVITY = 10
 UPDATE_RATE = 1e-8
 STARS_LIMITS = 50
+SCREEN_WIDTH, SCREEN_HEIGHT = (1920,1080)
 
 
 #Simulation parameters
 number_of_stars = 500
 
-size_min, size_max = 1, 5
+size_min, size_max = 3, 5
 vmin, vmax = 5, 20
 blur_movement = True
 
