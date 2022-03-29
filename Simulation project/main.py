@@ -43,7 +43,7 @@ class Background(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.left, self.rect.top = location
 
-BackGround = Background('milky3.png', [0,0])
+BackGround = Background('milky2.png', [0,0])
 
 
 
