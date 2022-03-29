@@ -21,8 +21,7 @@ def apply_edge(b:Body) -> None:
   elif b.position.y + b.size < 0:
      b.velocity.y *= -1
 
-def draw_body(screen:Surface, b:Body) -> None:
-  gfxdraw.aacircle(screen, int(b.position.x), int(b.position.y), int(b.size), b.color)
+
 
 
 def main():
@@ -54,7 +53,8 @@ def main():
       vel = Vector2(random() * vmax + vmin, random() * vmax + vmin), \
         mass=size*5e12, \
           size = size, \
-            color = new_color)
+            color = new_color, \
+              type = randint(BodyType.STAR, BodyType.BLACKHOLE + 1)) 
     bodies.append(b)
 
 
@@ -102,7 +102,7 @@ def main():
       if is_clicking:
             b.apply_force_toward(cursors_body)
       for other in bodies:
-        if b != other and b.distance(other) < 500:
+        if b != other and b.distance(other) < (b.size + other.size) * 3:
 
           
 
