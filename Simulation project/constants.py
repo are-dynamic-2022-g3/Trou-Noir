@@ -6,10 +6,10 @@ SCREEN_WIDTH, SCREEN_HEIGHT = (1920,1080)
 
 
 #Simulation parameters
-number_of_stars = 10
+number_of_stars = 15
 
 size_min, size_max = 50, 150
-size_to_blackhole = 100
+size_to_blackhole = 110
 lifespan_limit = 900 #ticks
 vmin, vmax = 5, 20
 blur_movement = True
