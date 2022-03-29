@@ -4,14 +4,14 @@ from pygame import *
 from constants import *
 
 class Body():
-    def __init__(self, pos:Vector2 = Vector2(0, 0), vel:Vector2 = Vector2(0, 0), acc:Vector2 = Vector2(0, 0), mass:float = 1, size:int = 1, color = (255, 255, 255)) -> None:
+    def __init__(self, pos:Vector2 = Vector2(0, 0), vel:Vector2 = Vector2(0, 0), acc:Vector2 = Vector2(0, 0), mass:float = 1, size:int = 1, color = (255, 255, 255), type:int = BodyType.STAR) -> None:
         self.position:Vector2 = pos
         self.velocity:Vector2 = vel
         self.acceleration:Vector2 = acc
         self.mass = mass
         self.size = size
-        self.surface: Surface 
         self.color = color
+        self.type:int = type
 
     def update(self, delta:float) -> None:
         self.velocity.x += self.acceleration.x * delta

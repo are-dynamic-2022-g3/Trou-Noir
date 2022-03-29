@@ -1,7 +1,7 @@
 from pygame import *
 from typing import Tuple
 
-def blur_screen(screen:Surface, alpha:int = 127, color:Tuple[int, int, int] = (0, 0, 0)) -> None:
+def fade_screen(screen:Surface, alpha:int = 127, color:Tuple[int, int, int] = (0, 0, 0)) -> None:
     fadein = Surface((screen.get_width(), screen.get_height()))
     fadein = fadein.convert()
     fadein.fill(color)

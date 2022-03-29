@@ -81,7 +81,7 @@ def main():
         is_clicking = False
 
     if blur_movement:
-      blur_screen(window)
+      fade_screen(window)
     else:
       window.fill((0, 0, 0))
 
