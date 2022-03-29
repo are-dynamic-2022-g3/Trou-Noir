@@ -21,6 +21,7 @@ class Body():
         self.type:int = type
 
     def update(self, delta:float) -> None:
+        """Update the body velocity, gfx size, and position"""
         self.gfx_size += (- self.gfx_size + self.size) * delta * size_interpolation_speed
         self.velocity.x += self.acceleration.x * delta
         self.velocity.y += self.acceleration.y * delta
@@ -29,6 +30,7 @@ class Body():
         self.position.y += self.velocity.y * delta
  
     def apply_force_toward(self, other:super) -> None:
+        """Apply force toward another body"""
         vec:Vector2 = other.position - self.position
         force = GRAVITY * other.mass/ vec.length()**2
         self.acceleration.x += vec.x * force
