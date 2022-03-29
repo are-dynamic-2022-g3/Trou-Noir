@@ -135,6 +135,9 @@ def main():
     #Simualate and draw bodies
     for b in bodies:
       b.update(UPDATE_RATE)
+      if b.gfx_size <= 0:
+        bodies.remove(b)
+        continue
       apply_edge(b)
       draw_body(window, b)
 
