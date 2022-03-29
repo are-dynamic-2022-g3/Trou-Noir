@@ -36,12 +36,15 @@ def apply_edge(b:Body) -> None:
   elif b.position.y + b.size < 0:
     b.position.y = SCREEN_HEIGHT + b.size
 
+
+
 class Background(pygame.sprite.Sprite):
     def __init__(self, image_file, location):
         pygame.sprite.Sprite.__init__(self)  #call Sprite initializer
         self.image = pygame.image.load(image_file)
         self.rect = self.image.get_rect()
         self.rect.left, self.rect.top = location
+
 
 BackGround = Background('milky2.png', [0,0])
 
@@ -70,7 +73,7 @@ def main():
 
   #Generate random stars with parameters below
   for _ in range(number_of_stars):
-    new_color = randint(127, 255), randint(127, 255), randint(127, 255)
+    new_color = randint(230, 255), randint(150, 190), randint(10, 15)
     size = randint(size_min, size_max)
     b = Body(pos = Vector2(randint(size, SCREEN_WIDTH - size), randint(size, SCREEN_HEIGHT - size)), \
       vel = Vector2(random() * vmax + vmin, random() * vmax + vmin), \
@@ -109,7 +112,7 @@ def main():
       window.fill((0, 0, 0))
       
     window.fill([255, 255, 255])
-    window.blit(BackGround.image, BackGround.rect)
+    window.blit(BackGround.image, BackGround.rect) #fills the background
 
     #===================================================================
     #Apply forces
