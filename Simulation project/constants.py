@@ -2,7 +2,7 @@
 GRAVITY = 10
 UPDATE_RATE = 1e-8
 STARS_LIMITS = 50
-SCREEN_WIDTH, SCREEN_HEIGHT = (1600,1000)
+SCREEN_WIDTH, SCREEN_HEIGHT = (1600,1000) #j'ai change par rapport al'arriere-plan
 
 
 #Simulation parameters
