@@ -73,7 +73,7 @@ def main():
 
   #Generate random stars with parameters below
   for _ in range(number_of_stars):
-    new_color = randint(230, 255), randint(150, 190), randint(10, 15)
+    new_color = randint(230, 255), randint(150, 190), randint(10, 15) #star color = yellow
     size = randint(size_min, size_max)
     b = Body(pos = Vector2(randint(size, SCREEN_WIDTH - size), randint(size, SCREEN_HEIGHT - size)), \
       vel = Vector2(random() * vmax + vmin, random() * vmax + vmin), \
@@ -112,7 +112,7 @@ def main():
       window.fill((0, 0, 0))
       
     window.fill([255, 255, 255])
-    window.blit(BackGround.image, BackGround.rect) #fills the background
+    window.blit(BackGround.image, BackGround.rect) #fills the background with image
 
     #===================================================================
     #Apply forces

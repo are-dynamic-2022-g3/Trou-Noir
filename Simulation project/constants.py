@@ -2,16 +2,18 @@
 GRAVITY = 10
 UPDATE_RATE = 1e-8
 STARS_LIMITS = 50
-SCREEN_WIDTH, SCREEN_HEIGHT = (1920,1080)
+SCREEN_WIDTH, SCREEN_HEIGHT = (1600,1000)
 
 
 #Simulation parameters
-number_of_stars = 15
+number_of_stars = 45
 
-size_min, size_max = 50, 150
-size_to_blackhole = 110
-lifespan_limit = 900 #ticks
-vmin, vmax = 5, 20
+size_min, size_max = 20, 140
+size_to_blackhole = 65
+size_to_whitedwarf = 6
+lifespan_limit = 480 #ticks
+lifespan_limit_WD = 300 #ticks for white dwarf
+vmin, vmax = 5, 30
 blur_movement = True
 
 #colors
