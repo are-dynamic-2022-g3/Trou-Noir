@@ -36,7 +36,14 @@ def apply_edge(b:Body) -> None:
   elif b.position.y + b.size < 0:
     b.position.y = SCREEN_HEIGHT + b.size
 
+class Background(pygame.sprite.Sprite):
+    def __init__(self, image_file, location):
+        pygame.sprite.Sprite.__init__(self)  #call Sprite initializer
+        self.image = pygame.image.load(image_file)
+        self.rect = self.image.get_rect()
+        self.rect.left, self.rect.top = location
 
+BackGround = Background('milky3.png', [0,0])
 
 
 
@@ -100,6 +107,9 @@ def main():
       fade_screen(window, color = "#1E000E")
     else:
       window.fill((0, 0, 0))
+      
+    window.fill([255, 255, 255])
+    window.blit(BackGround.image, BackGround.rect)
 
     #===================================================================
     #Apply forces
