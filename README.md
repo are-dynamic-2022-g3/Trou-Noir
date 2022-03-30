@@ -15,6 +15,8 @@ Dans le cadre de l'ARE DYNAMIC, nous sommes conduits à mener un projet de modé
 
 -Avec le temps, les étoiles vont mourir avec une explosion  et devenir naine blanche ou devenir un trou noir.
 
+<a href="https://zupimages.net/viewer.php?id=22/13/wqrb.jpg"><img src="https://zupimages.net/up/22/13/wqrb.jpg" alt="" /></a>
+
 # ASPECTS TECHNIQUES
 Notre modélisation se base sur 4 paramètres:
 -La masse des étoiles
@@ -24,7 +26,7 @@ Notre modélisation se base sur 4 paramètres:
 -La masse volumique des étoiles
 
 
-<a href="https://zupimages.net/viewer.php?id=22/13/wqrb.jpg"><img src="https://zupimages.net/up/22/13/wqrb.jpg" alt="" /></a>
+
 
 Membres du groupe:
 
