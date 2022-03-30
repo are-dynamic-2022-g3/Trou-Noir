@@ -53,12 +53,14 @@ class Body():
         self.type = BodyType.REDGIANT
         new_color_RG = randint(235, 255), randint(115, 140), 0
         self.color = new_color_RG
+        self.lifespan = 0
 
 
     def become_red_super_giant(self):
         self.type = BodyType.REDSUPERGIANT
         new_color_RSG = randint(205, 255), randint(37, 49), randint(37, 47)
         self.color = new_color_RSG
+        self.lifespan = 0
 
 
     def become_blachole(self):
@@ -66,6 +68,7 @@ class Body():
         new_color_BH = randint(205, 255), randint(37, 49), randint(37, 47) #black hole color = red
         self.color = new_color_BH 
         self.size = size_to_blackhole
+        self.lifespan = 0
 
 
     def become_whitedwarf(self):
@@ -73,13 +76,15 @@ class Body():
         new_color_WD = randint(200, 255), 255 , 255 #white dwarf color = white
         self.color = new_color_WD 
         self.size = size_to_whitedwarf
+        self.lifespan = 0
 
 
     def evolve(self):
+        if self.type == BodyType.REDSUPERGIANT:
+            self.become_blachole()
+            return
         if self.size > size_to_blackhole: 
             self.become_red_super_giant()
-            if random() < (self.lifespan  - lifespan_limit_RSG)/100: #ne marche pas
-                self.become_blachole()
         else:
             self.become_redgiant
             if random() < (self.lifespan  - lifespan_limit_RG)/100: #ne marche pas
