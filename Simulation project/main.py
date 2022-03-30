@@ -80,7 +80,7 @@ def main():
         mass=size*5e12, \
           size = size, \
             color = new_color, \
-              type = randint(BodyType.STAR, BodyType.BLACKHOLE + 1)) 
+              type = BodyType.STAR ) 
     bodies.append(b)
 
 

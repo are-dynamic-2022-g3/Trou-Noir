@@ -5,10 +5,10 @@ from constants import *
 
 class BodyType():
     STAR = 0
-    BLACKHOLE = 1
-    OTHER = 2 
-    WHITEDWARF = 3 #if not black hole
-
+    REDGIANT= 1 #va devenir white dwarf (plus petite)
+    REDSUPERGIANT = 2 #va devenir trou noir (plus grande)
+    BLACKHOLE = 3
+    WHITEDWARF = 4
 
 class Body():
     def __init__(self, pos:Vector2 = Vector2(0, 0), vel:Vector2 = Vector2(0, 0), acc:Vector2 = Vector2(0, 0), mass:float = 1, size:int = 1, color = (255, 255, 255), type:int = BodyType.STAR) -> None:
@@ -49,6 +49,18 @@ class Body():
         self.size = 0
 
 
+    def become_redgiant(self):
+        self.type = BodyType.REDGIANT
+        new_color_RG = randint(235, 255), randint(115, 140), 0
+        self.color = new_color_RG
+
+
+    def become_redsg(self):
+        self.type = BodyType.REDSUPERGIANT
+        new_color_RSG = randint(205, 255), randint(37, 49), randint(37, 47)
+        self.color = new_color_RSG
+
+
     def become_blachole(self):
         self.type = BodyType.BLACKHOLE
         new_color_BH = randint(205, 255), randint(37, 49), randint(37, 47) #black hole color = red
@@ -57,19 +69,23 @@ class Body():
 
 
     def become_whitedwarf(self):
-        self.type = BodyType.WHITEDWARF #white dwarf color = white
-        new_color_WD = randint(200, 255), 255 , 255
+        self.type = BodyType.WHITEDWARF 
+        new_color_WD = randint(200, 255), 255 , 255 #white dwarf color = white
         self.color = new_color_WD 
         self.size = size_to_whitedwarf
 
 
     def evolve(self):
         if self.size > size_to_blackhole: 
-            self.become_blachole()
+            self.become_redsg()
+            if random() < (self.lifespan  - lifespan_limit_RSG)/100: #ne marche pas
+                self.become_blachole()
         else:
-            self.become_whitedwarf()
-            if random() < (self.lifespan  - lifespan_limit_WD)/100: #je veux qu'elle se detruise 3s plus tard
-                self.kill()
+            self.become_redgiant
+            if random() < (self.lifespan  - lifespan_limit_RG)/100: #ne marche pas
+                self.become_whitedwarf()
+                #if random() < (self.lifespan  - lifespan_limit_WD)/100: je veux qu'elle se detruise 3s plus tard
+                    
             
     #toutes les etoiles deviennent white dwarf j'ai pas compris :( !!!!!
 

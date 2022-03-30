@@ -8,12 +8,14 @@ SCREEN_WIDTH, SCREEN_HEIGHT = (1600,1000)
 #Simulation parameters
 number_of_stars = 45
 
-size_min, size_max = 20, 140
-size_to_blackhole = 65
-size_to_whitedwarf = 6
+size_min, size_max = 15, 95
+size_to_blackhole = 75
+size_to_whitedwarf = 5
 lifespan_limit = 480 #ticks
+lifespan_limit_RG = 240
+lifespan_limit_RSG = 240
 lifespan_limit_WD = 300 #ticks for white dwarf
-vmin, vmax = 5, 30
+vmin, vmax = 3, 6
 blur_movement = True
 
 #colors
