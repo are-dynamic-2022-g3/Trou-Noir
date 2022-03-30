@@ -29,7 +29,7 @@ def fade_screen(screen:Surface, alpha:int = 127, color:Tuple[int, int, int] = (0
 def draw_body(screen:Surface, b:Body) -> None:
     """Draw the Body b into the Suface screen"""
     if b.type == BodyType.BLACKHOLE:
-        gfxdraw.aacircle(screen, int(b.position.x), int(b.position.y), int(b.gfx_size/5), b.color)
+        draw.circle(screen,  b.color, (int(b.position.x), int(b.position.y)),int(b.gfx_size), 5)
     else:
         gfxdraw.filled_circle(screen, int(b.position.x), int(b.position.y), int(b.gfx_size), b.color)
 

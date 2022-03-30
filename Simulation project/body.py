@@ -32,8 +32,9 @@ class Body():
         self.position.x += self.velocity.x * delta
         self.position.y += self.velocity.y * delta
 
-        self.lifespan += 1
-        if random() < (self.lifespan  - lifespan_limit)/100:
+        if self.lifespan >= 0:
+            self.lifespan += 1
+        if random() < (self.lifespan  - lifespan_limits[self.type])/100:
             self.evolve()
 
             
@@ -68,7 +69,7 @@ class Body():
         new_color_BH = randint(205, 255), randint(37, 49), randint(37, 47) #black hole color = red
         self.color = new_color_BH 
         self.size = size_to_blackhole
-        self.lifespan = 0
+        self.lifespan = -1
 
 
     def become_whitedwarf(self):
@@ -82,14 +83,14 @@ class Body():
     def evolve(self):
         if self.type == BodyType.REDSUPERGIANT:
             self.become_blachole()
-            return
-        if self.size > size_to_blackhole: 
+        elif self.type == BodyType.REDGIANT:
+            self.become_whitedwarf()
+        elif self.type == BodyType.WHITEDWARF:
+            self.kill()
+        elif self.size > size_to_blackhole: 
             self.become_red_super_giant()
         else:
-            self.become_redgiant
-            if random() < (self.lifespan  - lifespan_limit_RG)/100: #ne marche pas
-                self.become_whitedwarf()
-                #if random() < (self.lifespan  - lifespan_limit_WD)/100: je veux qu'elle se detruise 3s plus tard
+            self.become_redgiant()
                     
             
     #toutes les etoiles deviennent white dwarf j'ai pas compris :( !!!!!

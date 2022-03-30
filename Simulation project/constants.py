@@ -9,14 +9,17 @@ SCREEN_WIDTH, SCREEN_HEIGHT = (1600,1000) #j'ai change par rapport al'arriere-pl
 number_of_stars = 45
 
 size_min, size_max = 15, 95
-size_to_blackhole = 75
-size_to_whitedwarf = 5
-lifespan_limit = 480 #ticks
-lifespan_limit_RG = 240
-lifespan_limit_RSG = 240
-lifespan_limit_WD = 300 #ticks for white dwarf
 vmin, vmax = 3, 6
 blur_movement = True
+
+size_to_blackhole = 75
+size_to_whitedwarf = 5
+
+
+lifespan_limits = [480, 180, 180, -1, 300]
+#STAR // REDGIANT // REDSUPERGIANT // BLACKHOLE // WHITEDARF
+
+
 
 #colors
 red = (255, 0, 0)
