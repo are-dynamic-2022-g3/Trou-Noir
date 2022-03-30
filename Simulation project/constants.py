@@ -13,7 +13,7 @@ number_of_stars = 3
 spawn_rate = .03
 
 size_min, size_max = 15, 95
-vmin, vmax = 3, 6
+vmin, vmax = 0, 0
 blur_movement = True
 
 size_proportion_bh = 5

@@ -35,7 +35,7 @@ def apply_edge(b:Body) -> None:
 
 
 def create_star() -> Body:
-  new_color = randint(230, 255), randint(170, 190), randint(10, 15) #star color = yellow
+  new_color = randint(240, 255), randint(180, 200), randint(20, 30) #star color = yellow
   size = randint(size_min, size_max)
   b = Body(pos = Vector2(randint(size, SCREEN_WIDTH - size), randint(size, SCREEN_HEIGHT - size)), \
     vel = Vector2(random() * vmax + vmin, random() * vmax + vmin), \
@@ -51,11 +51,13 @@ def create_star() -> Body:
 
 
 def main():
+  #===================================================================
   #pygame initialisation
   pygame.init()
   window = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
   clock = pygame.time.Clock()
 
+  #===================================================================
   #Variables
   bodies:List[Body] = []
   run = True
@@ -72,14 +74,17 @@ def main():
   
   background:Background = Background('milky2.png', [0,0])
 
-  
+  window.set_colorkey(black)
 
+  
+  #===================================================================
   #Generate random stars with parameters below
   for _ in range(number_of_stars):
     bodies.append(create_star())
 
 
-
+  #===================================================================
+  #Main loop
   while run:
     ticks %= 60
     ticks += 1
@@ -107,7 +112,7 @@ def main():
     #window.blit(BackGround.image, BackGround.rect) #fills the background with image
 
     if blur_movement:
-      fade_screen(window, background = background)
+      fade_screen(window, background = background, alpha=32)
     else:
       window.fill((0, 0, 0))
       
@@ -143,7 +148,7 @@ def main():
             if bigger.type != BodyType.BLACKHOLE:
               continue
             bigger.mass += smaller.mass//3
-            bigger.size += smaller.size//3
+            bigger.size += smaller.mass//5e12 + 1
             bodies.remove(smaller)
 
     #===================================================================

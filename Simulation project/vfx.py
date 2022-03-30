@@ -2,6 +2,7 @@ from pygame import *
 from pygame import gfxdraw
 from typing import Tuple
 
+
 from body import *
 from constants import *
 
@@ -33,7 +34,7 @@ def draw_body(screen:Surface, b:Body) -> None:
         draw.circle(screen,  b.gfx_color, (int(b.position.x), int(b.position.y)),int(b.gfx_size), 5)
     else:
         gfxdraw.filled_circle(screen, int(b.position.x), int(b.position.y), int(b.gfx_size), b.gfx_color)
-
+        
 
 
 

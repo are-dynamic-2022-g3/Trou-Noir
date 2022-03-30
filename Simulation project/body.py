@@ -55,14 +55,14 @@ class Body():
 
     def become_redgiant(self):
         self.type = BodyType.REDGIANT
-        new_color_RG = randint(235, 255), randint(115, 140), 0
+        new_color_RG = randint(205, 255), randint(37, 49), randint(37, 47)
         self.color = new_color_RG
         self.lifespan = 0
 
 
     def become_red_super_giant(self):
         self.type = BodyType.REDSUPERGIANT
-        new_color_RSG = randint(205, 255), randint(37, 49), randint(37, 47)
+        new_color_RSG = randint(235, 255), randint(115, 140), 0
         self.color = new_color_RSG
         self.lifespan = 0
 
@@ -80,6 +80,7 @@ class Body():
         new_color_WD = randint(200, 255), 255 , 255 #white dwarf color = white
         self.color = new_color_WD 
         self.size = size_to_whitedwarf
+        self.mass /= 4
         self.lifespan = 0
 
 
