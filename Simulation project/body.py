@@ -97,7 +97,6 @@ class Body():
             self.become_redgiant()
                     
             
-    #toutes les etoiles deviennent white dwarf j'ai pas compris :( !!!!!
 
 
     def distance(self, other:super) -> float:

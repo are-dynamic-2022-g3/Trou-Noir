@@ -112,7 +112,7 @@ def main():
     #window.blit(BackGround.image, BackGround.rect) #fills the background with image
 
     if blur_movement:
-      fade_screen(window, background = background, alpha=32)
+      fade_screen(window, background = background, alpha=64)
     else:
       window.fill((0, 0, 0))
       
