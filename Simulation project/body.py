@@ -1,6 +1,8 @@
 from random import *
 from typing import Tuple
 from pygame import *
+
+from vfx import *
 from constants import *
 
 class BodyType():
@@ -19,6 +21,7 @@ class Body():
         self.size = size
         self.gfx_size = 0
         self.color = color
+        self.gfxcolor = white
         self.type:int = type
         self.lifespan:int = 0
 
@@ -26,6 +29,7 @@ class Body():
     def update(self, delta:float) -> None:
         """Update the body velocity, gfx size, and position"""
         self.gfx_size += (- self.gfx_size + self.size) >> 2 # <=> divide by 4
+        self.gfx_color = mean_color(self.gfx_color, self.color)
         self.velocity.x += self.acceleration.x * delta
         self.velocity.y += self.acceleration.y * delta
         
