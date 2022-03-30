@@ -10,7 +10,7 @@ SCREEN_WIDTH, SCREEN_HEIGHT = (1600,1000) #j'ai change par rapport al'arriere-pl
 
 #Simulation parameters
 number_of_stars = 3
-spawn_rate = .03
+spawn_rate = .005
 
 size_min, size_max = 15, 95
 vmin, vmax = 0, 0

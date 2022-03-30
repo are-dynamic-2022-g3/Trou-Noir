@@ -147,7 +147,7 @@ def main():
 
             if bigger.type != BodyType.BLACKHOLE:
               continue
-            bigger.mass += smaller.mass//3
+            bigger.mass += smaller.mass
             bigger.size += smaller.mass//5e12 + 1
             bodies.remove(smaller)
 

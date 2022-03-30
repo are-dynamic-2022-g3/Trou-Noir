@@ -69,7 +69,7 @@ class Body():
 
     def become_blachole(self):
         self.type = BodyType.BLACKHOLE
-        new_color_BH = randint(205, 255), randint(37, 49), randint(37, 47) #black hole color = red
+        new_color_BH = randint(102, 127), randint(18, 24), randint(16, 23) #black hole color = red
         self.color = new_color_BH 
         self.size /= size_proportion_bh
         self.lifespan = -1
@@ -80,7 +80,7 @@ class Body():
         new_color_WD = randint(200, 255), 255 , 255 #white dwarf color = white
         self.color = new_color_WD 
         self.size = size_to_whitedwarf
-        self.mass /= 4
+        self.mass /= 8
         self.lifespan = 0
 
 
