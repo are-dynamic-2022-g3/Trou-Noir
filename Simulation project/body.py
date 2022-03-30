@@ -1,9 +1,8 @@
 from random import *
-from typing import Tuple
 from pygame import *
 
-from vfx import *
 from constants import *
+from operation import *
 
 class BodyType():
     STAR = 0
@@ -21,7 +20,7 @@ class Body():
         self.size = size
         self.gfx_size = 0
         self.color = color
-        self.gfxcolor = white
+        self.gfx_color = white
         self.type:int = type
         self.lifespan:int = 0
 
