@@ -9,13 +9,16 @@ SCREEN_WIDTH, SCREEN_HEIGHT = (1600,1000) #j'ai change par rapport al'arriere-pl
 
 
 #Simulation parameters
-number_of_stars = 45
+number_of_stars = 3
+spawn_rate = .03
 
 size_min, size_max = 15, 95
 vmin, vmax = 3, 6
 blur_movement = True
 
-size_to_blackhole = 75
+size_proportion_bh = 5
+
+size_to_blackhole = 82
 size_to_whitedwarf = 5
 
 

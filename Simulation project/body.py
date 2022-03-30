@@ -17,8 +17,8 @@ class Body():
         self.velocity:Vector2 = vel
         self.acceleration:Vector2 = acc
         self.mass = mass
-        self.size = size
-        self.gfx_size = 0
+        self.size:int = size
+        self.gfx_size:int = 0
         self.color = color
         self.gfx_color = white
         self.type:int = type
@@ -27,7 +27,7 @@ class Body():
 
     def update(self, delta:float) -> None:
         """Update the body velocity, gfx size, and position"""
-        self.gfx_size += (- self.gfx_size + self.size) >> 2 # <=> divide by 4
+        self.gfx_size += int(- self.gfx_size + self.size) >> 2 # <=> divide by 4
         self.gfx_color = mean_color(self.gfx_color, self.color)
         self.velocity.x += self.acceleration.x * delta
         self.velocity.y += self.acceleration.y * delta
@@ -37,7 +37,7 @@ class Body():
 
         if self.lifespan >= 0:
             self.lifespan += 1
-        if random() < (self.lifespan  - lifespan_limits[self.type])/100:
+        if random() < (self.lifespan  - lifespan_limits[self.type])/1000:
             self.evolve()
 
             
@@ -71,7 +71,7 @@ class Body():
         self.type = BodyType.BLACKHOLE
         new_color_BH = randint(205, 255), randint(37, 49), randint(37, 47) #black hole color = red
         self.color = new_color_BH 
-        self.size = size_to_blackhole
+        self.size /= size_proportion_bh
         self.lifespan = -1
 
 

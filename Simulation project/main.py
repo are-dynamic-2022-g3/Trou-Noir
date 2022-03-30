@@ -34,7 +34,16 @@ def apply_edge(b:Body) -> None:
     b.position.y = SCREEN_HEIGHT + b.size
 
 
-
+def create_star() -> Body:
+  new_color = randint(230, 255), randint(170, 190), randint(10, 15) #star color = yellow
+  size = randint(size_min, size_max)
+  b = Body(pos = Vector2(randint(size, SCREEN_WIDTH - size), randint(size, SCREEN_HEIGHT - size)), \
+    vel = Vector2(random() * vmax + vmin, random() * vmax + vmin), \
+      mass=size*5e12, \
+        size = size, \
+          color = new_color, \
+            type = BodyType.STAR ) 
+  return b
 
 
 
@@ -67,15 +76,7 @@ def main():
 
   #Generate random stars with parameters below
   for _ in range(number_of_stars):
-    new_color = randint(230, 255), randint(150, 190), randint(10, 15) #star color = yellow
-    size = randint(size_min, size_max)
-    b = Body(pos = Vector2(randint(size, SCREEN_WIDTH - size), randint(size, SCREEN_HEIGHT - size)), \
-      vel = Vector2(random() * vmax + vmin, random() * vmax + vmin), \
-        mass=size*5e12, \
-          size = size, \
-            color = new_color, \
-              type = BodyType.STAR ) 
-    bodies.append(b)
+    bodies.append(create_star())
 
 
 
@@ -84,6 +85,9 @@ def main():
     ticks += 1
     
     clock.tick(60)
+
+    if random() < spawn_rate:
+      bodies.append(create_star())
 
     cursors_body.position = Vector2(pygame.mouse.get_pos())
 
@@ -131,7 +135,7 @@ def main():
           b.apply_force_toward(other)
 
           #Merge
-          if b.distance(other) < (b.size + other.size)/15:
+          if b.distance(other) < (b.size + other.size)/3:
             bigger, smaller = b, other
             if b.size < other.size:
               smaller, bigger = b, other
