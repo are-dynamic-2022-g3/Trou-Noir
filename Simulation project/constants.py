@@ -1,4 +1,7 @@
 #Simulation constants
+from typing import Tuple
+
+
 GRAVITY = 10
 UPDATE_RATE = 1e-8
 STARS_LIMITS = 50
@@ -29,3 +32,5 @@ white = (255, 255, 255)
 black = (0, 0, 0)
 
 size_interpolation_speed = 5*1e6 
+
+ColorT = Tuple[int, int, int]
