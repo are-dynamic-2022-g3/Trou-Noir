@@ -55,7 +55,7 @@ class Body():
         self.color = new_color_RG
 
 
-    def become_redsg(self):
+    def become_red_super_giant(self):
         self.type = BodyType.REDSUPERGIANT
         new_color_RSG = randint(205, 255), randint(37, 49), randint(37, 47)
         self.color = new_color_RSG
@@ -77,7 +77,7 @@ class Body():
 
     def evolve(self):
         if self.size > size_to_blackhole: 
-            self.become_redsg()
+            self.become_red_super_giant()
             if random() < (self.lifespan  - lifespan_limit_RSG)/100: #ne marche pas
                 self.become_blachole()
         else:

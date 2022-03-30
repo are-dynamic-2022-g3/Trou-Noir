@@ -38,15 +38,9 @@ def apply_edge(b:Body) -> None:
 
 
 
-class Background(pygame.sprite.Sprite):
-    def __init__(self, image_file, location):
-        pygame.sprite.Sprite.__init__(self)  #call Sprite initializer
-        self.image = pygame.image.load(image_file)
-        self.rect = self.image.get_rect()
-        self.rect.left, self.rect.top = location
 
 
-BackGround = Background('milky2.png', [0,0])
+
 
 
 
@@ -68,6 +62,9 @@ def main():
   text = font.render(f'FPS : N/A', True, green, blue)
   textRect = text.get_rect()
   textRect.center = (50, 20)
+
+  
+  background:Background = Background('milky2.png', [0,0])
 
   
 
@@ -106,13 +103,14 @@ def main():
       if event.type == pygame.MOUSEBUTTONUP:
         is_clicking = False
 
+    #window.blit(BackGround.image, BackGround.rect) #fills the background with image
+
     if blur_movement:
-      fade_screen(window, color = "#1E000E")
+      fade_screen(window, background = background)
     else:
       window.fill((0, 0, 0))
       
-    window.fill([255, 255, 255])
-    window.blit(BackGround.image, BackGround.rect) #fills the background with image
+    
 
     #===================================================================
     #Apply forces
