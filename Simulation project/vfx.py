@@ -1,6 +1,7 @@
 from pygame import *
 from pygame import gfxdraw
 from typing import Tuple
+
 from body import *
 from constants import *
 
@@ -33,8 +34,6 @@ def draw_body(screen:Surface, b:Body) -> None:
     else:
         gfxdraw.filled_circle(screen, int(b.position.x), int(b.position.y), int(b.gfx_size), b.gfxcolor)
 
-def mean_color(color1:ColorT, color2:ColorT):
-    r1, g1, b1, r2, g2, b2 = color1, color2
-    return((r1 + r2)//2, (g1, g2)//2, (b1 + b2)//2)
+
 
 
