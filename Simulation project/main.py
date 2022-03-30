@@ -1,5 +1,3 @@
-from pickletools import TAKEN_FROM_ARGUMENT1
-from numba import jit, cuda
 from random import randint, random
 import pygame
 from typing import List
