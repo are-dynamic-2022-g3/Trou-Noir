@@ -8,7 +8,7 @@ Dans le cadre de l'ARE DYNAMIC, nous sommes conduits à mener un projet de modé
 
 # THEME
 
-Notre thème c'est la creation et l'&volution d'une galaxie
+Notre thème c'est la creation et l'évolution d'une galaxie
 
 # PROBLEMATIQUE
 
