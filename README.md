@@ -14,6 +14,10 @@ Notre thème c'est la creation et l'&volution d'une galaxie
 
 Après notres recherche, nous nous sommes demandées la question: Est-ce qu'on va toujours avoir une trou noir dans une galaxie?
 
+# HYPOTHESE 
+
+Notre hypothèse c'est qu'on va pas avoir une trou noir dans chaque galaxie car on dois avoir plusieurs parametres pour la creation d'une trou noir 
+
 
 
 
