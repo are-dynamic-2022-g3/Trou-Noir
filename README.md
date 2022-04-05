@@ -33,13 +33,19 @@ Notre hypothèse c'est qu'on va pas avoir une trou noir dans chaque galaxie car 
 # ASPECTS TECHNIQUES
 Notre modélisation se base sur 4 paramètres:
 
+-La taille des étoiles
+
 -La masse des étoiles
 
 -Le nombre des étoiles
 
 -La masse volumique des étoiles
 
+# JSP
 
+Pour qu'une étoile devienne un trou noir, sa masse doit etre trois fois plus grand que celle du soleil et il doit avoir une taille assez petit. Les trous-noirs attirent les choses près de eux avec une force enorme. Dans notre modelisation on a fait  que les trous aient une force gravitationelle.
+
+`Rs = 2MG/c^2`
 
 
 Membres du groupe:
