@@ -27,8 +27,10 @@ class Body():
 
     def update(self, delta:float) -> None:
         """Update the body velocity, gfx size, and position"""
-        self.gfx_size += int(- self.gfx_size + self.size) >> 2 # <=> divide by 4
+        self.gfx_size += int(- self.gfx_size + self.size * (1 - int(self.type == BodyType.BLACKHOLE) * (1 - size_proportion_bh))) >> 2 # <=> divide by 4
         self.gfx_color = mean_color(self.gfx_color, self.color)
+
+
         self.velocity.x += self.acceleration.x * delta
         self.velocity.y += self.acceleration.y * delta
         
@@ -39,6 +41,11 @@ class Body():
             self.lifespan += 1
         if random() < (self.lifespan  - lifespan_limits[self.type])/1000:
             self.evolve()
+
+        if self.type == BodyType.BLACKHOLE:
+            self.mass *= .9995
+
+            self.size = self.mass // SIZE_TO_MASS_FACTOR
 
             
     def apply_force_toward(self, other:super) -> None:
@@ -71,7 +78,6 @@ class Body():
         self.type = BodyType.BLACKHOLE
         new_color_BH = randint(102, 127), randint(18, 24), randint(16, 23) #black hole color = red
         self.color = new_color_BH 
-        self.size /= size_proportion_bh
         self.lifespan = -1
 
 

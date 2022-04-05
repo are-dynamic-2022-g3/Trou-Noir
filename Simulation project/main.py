@@ -8,7 +8,7 @@ from body import *
 
 
 def apply_edge(b:Body) -> None:
-  """
+  """ Bounce
   if b.position.x - b.size > SCREEN_WIDTH:
     b.position.x = SCREEN_WIDTH + b.size
     b.velocity.x *= -1
@@ -23,23 +23,24 @@ def apply_edge(b:Body) -> None:
     b.position.y = - b.size
     b.velocity.y *= -1
   """
-  if b.position.x - b.size > SCREEN_WIDTH:
-    b.position.x = -b.size
-  elif b.position.x + b.size < 0:
-    b.position.x = SCREEN_WIDTH + b.size
+  #Teleport
+  if b.position.x - b.gfx_size > SCREEN_WIDTH:
+    b.position.x = -b.gfx_size
+  elif b.position.x + b.gfx_size < 0:
+    b.position.x = SCREEN_WIDTH + b.gfx_size
 
-  if b.position.y - b.size > SCREEN_HEIGHT:
-    b.position.y = -b.size
-  elif b.position.y + b.size < 0:
-    b.position.y = SCREEN_HEIGHT + b.size
+  if b.position.y - b.gfx_size > SCREEN_HEIGHT:
+    b.position.y = -b.gfx_size
+  elif b.position.y + b.gfx_size < 0:
+    b.position.y = SCREEN_HEIGHT + b.gfx_size
 
 
 def create_star() -> Body:
   new_color = randint(240, 255), randint(180, 200), randint(20, 30) #star color = yellow
-  size = randint(size_min, size_max)
+  size = int(expovariate(5) * (size_max - size_min) + size_min)
   b = Body(pos = Vector2(randint(size, SCREEN_WIDTH - size), randint(size, SCREEN_HEIGHT - size)), \
     vel = Vector2(random() * vmax + vmin, random() * vmax + vmin), \
-      mass=size*5e12, \
+      mass=size*SIZE_TO_MASS_FACTOR, \
         size = size, \
           color = new_color, \
             type = BodyType.STAR ) 
@@ -112,7 +113,7 @@ def main():
     #window.blit(BackGround.image, BackGround.rect) #fills the background with image
 
     if blur_movement:
-      fade_screen(window, background = background, alpha=64)
+      fade_screen(window, background = background, alpha=blur_intesity)
     else:
       window.fill((0, 0, 0))
       
@@ -135,21 +136,20 @@ def main():
       if is_clicking:
             b.apply_force_toward(cursors_body)
       for other in bodies:
-        if b != other and b.distance(other) < (b.size + other.size) * 3:
+        if b != other and b.distance(other) < (b.mass//SIZE_TO_MASS_FACTOR + other.mass//SIZE_TO_MASS_FACTOR) * 5:
 
           b.apply_force_toward(other)
 
           #Merge
-          if b.distance(other) < (b.size + other.size)/3:
+          if b.distance(other) < (b.gfx_size + other.gfx_size)/3:
             bigger, smaller = b, other
             if b.size < other.size:
               smaller, bigger = b, other
 
-            if bigger.type != BodyType.BLACKHOLE:
+            if bigger.type != BodyType.BLACKHOLE or other.size <= 0:
               continue
-            bigger.mass += smaller.mass
-            bigger.size += smaller.mass//5e12 + 1
-            bodies.remove(smaller)
+            bigger.mass += smaller.mass * .3
+            smaller.kill()
 
     #===================================================================
     #Simualate and draw bodies

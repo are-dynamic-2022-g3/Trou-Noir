@@ -2,27 +2,30 @@
 from typing import Tuple
 
 
-GRAVITY = 10
-UPDATE_RATE = 1e-8
+GRAVITY = 1e5
+UPDATE_RATE = 1e-10
 STARS_LIMITS = 50
 SCREEN_WIDTH, SCREEN_HEIGHT = (1600,1000) 
+SIZE_TO_MASS_FACTOR = 5e12
 
 
 #Simulation parameters
-number_of_stars = 6
-spawn_rate = .009
+number_of_stars = 12
+spawn_rate = .02
 
-size_min, size_max = 15, 95
-vmin, vmax = 0, 0
-blur_movement = True
+size_min, size_max = 10, 69 #Size with what the stars with spawn = randint(size_min, size_max)
+vmin, vmax = 0, 0 #Range of the initial velocity
+blur_movement = True #Visual effect
+blur_intesity = 64
 
-size_proportion_bh = 5
+size_proportion_bh = .2 #Blackhole seem smaller than they are
 
-size_to_blackhole = 89
+size_to_blackhole = 50
 size_to_whitedwarf = 5
 
 
 lifespan_limits = [480, 180, 180, -1, 300]
+
 #STAR // REDGIANT // REDSUPERGIANT // BLACKHOLE // WHITEDWARF
 
 
