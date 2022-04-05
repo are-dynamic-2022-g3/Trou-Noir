@@ -7,7 +7,12 @@ Une simulation du cycle de plusieurs étoiles sur des milliard d'années d'une �
 Dans le cadre de l'ARE DYNAMIC, nous sommes conduits à mener un projet de modélisation sur un sujet que nous avons choisi. Ce dernier se porte sur la formation d'une galaxie constituée des plusieurs étoiles en débutant la modélisation.On va aussi étudier la formation des trous noirs dans des differents environnements.
 
 # THEME
-Notre thème c'est la creation et
+
+Notre thème c'est la creation et l'&volution d'une galaxie
+
+# PROBLEMATIQUE
+
+Après notres recherche, nous nous sommes demandées la question: Est-ce qu'on va toujours avoir une trou noir dans une galaxie?
 
 
 
