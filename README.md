@@ -1,6 +1,6 @@
 # Trou Noir
 
-Une simulation révélant le cycle de vie d'un milliard d'années d'une étoile.
+Une simulation du cycle de plusieurs étoiles sur des milliard d'années d'une étoile.
 
 # INTRODUCTION
 
