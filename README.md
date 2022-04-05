@@ -45,7 +45,7 @@ Notre modélisation se base sur 4 paramètres:
 
 Pour qu'une étoile devienne un trou noir, sa masse doit etre trois fois plus grand que celle du soleil et il doit avoir une taille assez petit. Les trous-noirs attirent les choses près de eux avec une force enorme. Dans notre modelisation on a fait pour que les trous noirs attirent les choses avec une force gravitationelle.
 
-Rs = 2MG/c^2
+`Rs = 2MG/c^2`
 
 
 Membres du groupe:
