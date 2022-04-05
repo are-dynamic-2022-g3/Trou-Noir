@@ -1,14 +1,14 @@
 # Trou Noir
 
-Une simulation du cycle de plusieurs étoiles sur des milliard d'années d'une étoile.
+Une simulation du cycle de vie de plusieurs étoiles sur des milliard d'années d'une étoile.
 
 # INTRODUCTION
 
-Dans le cadre de l'ARE DYNAMIC, nous sommes conduits à mener un projet de modélisation sur un sujet que nous avons choisi. Ce dernier se porte sur la formation d'une galaxie constituée des plusieurs étoiles en débutant la modélisation.On va aussi étudier la formation des trous noirs dans des differents environnements.
+Dans le cadre de l'ARE DYNAMIC, nous nous sommes conduits à mener un projet de modélisation sur un sujet que nous avons choisi. Ce dernier se porte sur la formation d'une galaxie constituée des plusieurs étoiles en débutant la modélisation.On va aussi étudier la formation des trous noirs dans des differents environnements.
 
 # THEME
 
-Notre thème c'est la creation et l'évolution d'une galaxie et aussi le cycle de vie des étoiles
+Notre thème c'est la création et l'évolution d'une galaxie et aussi le cycle de vie des étoiles.
 
 # PROBLEMATIQUE
 
@@ -16,7 +16,7 @@ Après notres recherche, nous nous sommes demandées la question: Est-ce qu'on v
 
 # HYPOTHESE 
 
-Notre hypothèse c'est qu'on va pas avoir une trou noir dans chaque galaxie car on dois avoir plusieurs parametres pour la creation d'une trou noir 
+Notre hypothèse c'est qu'on va pas avoir un trou noir dans chaque galaxie car on doiy avoir plusieurs parametres pour la création d'un trou noir.
 
 
 
