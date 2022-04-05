@@ -26,7 +26,7 @@ Notre hypothèse c'est qu'on va pas avoir une trou noir dans chaque galaxie car 
 
 -Dépendant du rayon et de la masse de l'étoile elle se transforme soit en red giant soit en red super giant.
 
--Avec le temps, les étoiles vont mourir avec une explosion  et devenir naine blanche ou devenir un trou noir.
+-Avec le temps, les étoiles vont mourir avec une explosion et devenir naine blanche ou devenir soit une étoile neutron soit  un trou noir.
 
 <a href="https://zupimages.net/viewer.php?id=22/13/wqrb.jpg"><img src="https://zupimages.net/up/22/13/wqrb.jpg" alt="" /></a>
 
