@@ -33,13 +33,17 @@ Notre hypothèse c'est qu'on va pas avoir une trou noir dans chaque galaxie car 
 # ASPECTS TECHNIQUES
 Notre modélisation se base sur 4 paramètres:
 
+-La taille des étoiles
+
 -La masse des étoiles
 
 -Le nombre des étoiles
 
 -La masse volumique des étoiles
 
+# JSP
 
+Les trous-noirs attirent les choses près de eux avec une force enorme. Dans notre modelisation on a fait pour que les trous noirs attirent les choses avec une force gravitationelle.
 
 
 Membres du groupe:
