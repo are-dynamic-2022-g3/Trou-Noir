@@ -11,18 +11,17 @@ SIZE_TO_MASS_FACTOR = 5e12
 
 #Simulation parameters
 number_of_stars = 12
-spawn_rate = .02
+spawn_rate = .024
 
-size_min, size_max = 10, 69 #Size with what the stars with spawn = randint(size_min, size_max)
+size_min, size_max = 12, 69 #Size with what the stars with spawn = randint(size_min, size_max)
 vmin, vmax = 0, 0 #Range of the initial velocity
 blur_movement = True #Visual effect
-blur_intesity = 64
+blur_intesity = 128
 
 size_proportion_bh = .2 #Blackhole seem smaller than they are
 
-size_to_blackhole = 50
+size_to_blackhole = 55
 size_to_whitedwarf = 5
-
 
 lifespan_limits = [480, 180, 180, -1, 300]
 

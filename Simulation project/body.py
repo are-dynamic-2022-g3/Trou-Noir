@@ -43,7 +43,7 @@ class Body():
             self.evolve()
 
         if self.type == BodyType.BLACKHOLE:
-            self.mass *= .9995
+            self.mass *= .9997
 
             self.size = self.mass // SIZE_TO_MASS_FACTOR
 
