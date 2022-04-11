@@ -16,7 +16,7 @@ Après notres recherche, nous nous sommes demandées la question: Est-ce qu'on v
 
 # HYPOTHESE 
 
-Notre hypothèse c'est qu'on va pas avoir un trou noir dans chaque galaxie car on doiy avoir plusieurs parametres pour la création d'un trou noir.
+Notre hypothèse c'est qu'on va pas avoir un trou noir dans chaque galaxie car on doit avoir plusieurs parametres pour la création d'un trou noir.
 
 
 
