@@ -8,7 +8,7 @@ Dans le cadre de l'ARE DYNAMIC, nous nous sommes conduits à mener un projet de 
 
 # THEME
 
-Notre thème c'est la création et l'évolution d'une galaxie et aussi le cycle de vie des étoiles.
+Notre thème, c'est la création et l'évolution d'une galaxie et aussi le cycle de vie des étoiles.
 
 # PROBLEMATIQUE
 
@@ -16,7 +16,7 @@ Après notres recherche, nous nous sommes demandées la question: Est-ce qu'on v
 
 # HYPOTHESE 
 
-Notre hypothèse c'est qu'on va pas avoir un trou noir dans chaque galaxie car on doit avoir plusieurs parametres pour la création d'un trou noir.
+Notre hypothèse c'est qu'on ne va pas avoir un trou noir dans chaque galaxie car on doit avoir plusieurs parametres pour la création d'un trou noir.
 
 
 
@@ -41,17 +41,17 @@ Notre modélisation se base sur 6 paramètres:
 
 -La masse volumique des étoiles
 
--La duration des vies des étoiles
+-La durée de vie des étoiles
 
 -Le taux de fraye pour les étoiles
 
 # LES REGLES DANS NOTRE MODELISATION
 
--Pour la formation d'une trou noir, sa masse doit etre trois fois plus grande que celle du soleil et avoir la taille necessaire. Ou bien on peut utiliser la formule de Schwarzschild radius donné dessous.
+-Pour la formation d'un trou noir, sa masse doit etre au moins trois fois plus grande que celle du soleil et avoir le volume necessaire. Ou bien, on peut utiliser la formule de Schwarzschild radius donné au-dessous.
 
 <a href="https://zupimages.net/viewer.php?id=22/15/lrjm.jpg"><img src="https://zupimages.net/up/22/15/lrjm.jpg" alt="" /></a>
 
--On sait que les trous noir perdent leur taille avec le temps selon la theoreme "Hawking Radiation". On sait aussi que les trous noirs ont une force gravitationelle tres forte. On a utilise les deux faits dans notre modelisation et on a fait pour que le modele ait une force gravitationelle ou l'utilisateur clique pour rendre une experience plus amusante.
+-On sait que les trous noirs perdent leur volume avec le temps selon la theoreme "Hawking Radiation". On sait aussi que les trous noirs ont une force gravitationelle tres forte. On a utilise ces deux faits dans notre modelisation et on a fait pour que le modele ait une force gravitationelle ou l'utilisateur clique pour rendre une experience plus amusante.
 
 
 
@@ -61,7 +61,7 @@ Notre modélisation se base sur 6 paramètres:
 
 # PLUSIEURS EXPERIENCES
 
--Apres avoir fait notre modele, on a joué avec les parametres pour voir les differentes possibilites.
+-Apres avoir fait notre modele, on a joué avec les parametres pour préciser les variations possibles.
 
 <a href="https://zupimages.net/viewer.php?id=22/15/rrun.png"><img src="https://zupimages.net/up/22/15/rrun.png" alt="" /></a>
 
@@ -74,10 +74,10 @@ Notre modélisation se base sur 6 paramètres:
 <a href="https://zupimages.net/viewer.php?id=22/15/qx77.png"><img src="https://zupimages.net/up/22/15/qx77.png" alt="" /></a>
 
 Apres les experiences on a comparé les resultats et on a vu que:
-- Quand on commence avec plus de étoiles, la probabilité qu'une trou noir assez grande se forme augmente.
-- Quand on augmente le nombre des étoiles crées chaque seconde, on attendais avoir une proba de trou noir plus grande mais on a vu le contraire. On a eu moins de trous noirs et moins de trous noirs assez grandes.
-- Quand on a augmenté la taille necessaire pour devenir trou noir,on a eu moins de trous noirs et on a observé un essai sans aucun trou noir.
-- Quand on a changé la duration de vie, on a eu des resultats qu'on attendais pas. On avait le hypothese que si les étoiles vivaient plus longue, le trou noir aurait plus des choses a "manger" et donc on aurait davantage des trous noir mais les resultats etaient le contriare. On a eu moins des trous noirs quand on a augmenté la vie et moins des trous noirs quand on l'a diminué.
+- Quand on commence avec plus d'étoiles, la probabilité qu'un trou noir assez grande se forme augmente.
+- Quand on augmente le nombre des étoiles créées chaque seconde, on attendais avoir une probabailité de trou noir plus grande mais on a vu le contraire. On a eu moins de trous noirs et moins de trous noirs assez grandes.
+- Quand on a augmenté le volume necessaire pour devenir trou noir, on a eu moins de trous noirs et on a observé des essais sans formation de trou noir.
+- Quand on a changé la durée de vie des étoiles simples, on a eu des resultats qu'on n'attendais pas. On avait l'hypothese que si les étoiles vivaient plus longue, le trou noir aurait plus d'objets célestes a "manger" et donc on aurait davantage des trous noirs mais les resultats etaient le contriare. On a eu moins des trous noirs quand on a augmenté la vie et moins des trous noirs quand on l'a diminuée.
 
 Membres du groupe:
 
