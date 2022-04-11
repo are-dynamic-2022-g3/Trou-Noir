@@ -49,6 +49,8 @@ Notre modélisation se base sur 4 paramètres:
 
 -On sait que les trous noir perdent leur taille avec le temps selon la theoreme "Hawking Radiation". On sait aussi que les trous noirs ont une force gravitationelle tres forte. On a utilise les deux faits dans notre modelisation et on a fait pour que le modele ait une force gravitationelle ou l'utilisateur clique pour rendre une experience plus amusante.
 
+
+
 <a href="https://zupimages.net/viewer.php?id=22/15/a2xn.jpg"><img src="https://zupimages.net/up/22/15/a2xn.jpg" alt="" /></a>
 
 # PLUSIEURS EXPERIENCES
