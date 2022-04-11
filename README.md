@@ -67,6 +67,10 @@ Notre modélisation se base sur 6 paramètres:
 
 <a href="https://zupimages.net/viewer.php?id=22/15/ophx.png"><img src="https://zupimages.net/up/22/15/ophx.png" alt="" /></a>
 
+<a href="https://zupimages.net/viewer.php?id=22/15/fasq.png"><img src="https://zupimages.net/up/22/15/fasq.png" alt="" /></a>
+
+<a href="https://zupimages.net/viewer.php?id=22/15/qx77.png"><img src="https://zupimages.net/up/22/15/qx77.png" alt="" /></a>
+
 Apres les experiences on a comparé les resultats et on a vu que:
 - Quand on commence avec plus de étoiles, la probabilité qu'une trou noir assez grande se forme augmente.
 - Quand on augmente le nombre des étoiles crées chaque seconde, on attendais avoir une proba de trou noir plus grande mais on a vu le contraire. On a eu moins de trous noirs et moins de trous noirs assez grandes.
