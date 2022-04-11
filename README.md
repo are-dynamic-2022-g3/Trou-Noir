@@ -57,6 +57,8 @@ Notre modélisation se base sur 6 paramètres:
 
 <a href="https://zupimages.net/viewer.php?id=22/15/a2xn.jpg"><img src="https://zupimages.net/up/22/15/a2xn.jpg" alt="" /></a>
 
+<a href="https://zupimages.net/viewer.php?id=22/15/plcb.jpg"><img src="https://zupimages.net/up/22/15/plcb.jpg" alt="" /></a>
+
 # PLUSIEURS EXPERIENCES
 
 -Apres avoir fait notre modele, on a joué avec les parametres pour voir les differentes possibilites.
