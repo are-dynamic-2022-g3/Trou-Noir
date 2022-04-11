@@ -31,7 +31,7 @@ Notre hypothèse c'est qu'on va pas avoir un trou noir dans chaque galaxie car o
 <a href="https://zupimages.net/viewer.php?id=22/13/wqrb.jpg"><img src="https://zupimages.net/up/22/13/wqrb.jpg" alt="" /></a>
 
 # ASPECTS TECHNIQUES
-Notre modélisation se base sur 4 paramètres:
+Notre modélisation se base sur 6 paramètres:
 
 -La taille des étoiles
 
