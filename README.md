@@ -41,11 +41,13 @@ Notre modélisation se base sur 4 paramètres:
 
 -La masse volumique des étoiles
 
-# JSP
+# LES REGLES DANS NOTRE MODELISATION
 
-Pour qu'une étoile devienne un trou noir, sa masse doit etre trois fois plus grand que celle du soleil et il doit avoir une taille assez petit. Les trous-noirs attirent les choses près d'eux avec une force enorme. Dans notre modelisation on a fait  que les trous aient une force gravitationelle.On a aussi codé pour que l'utilisateur peut faire une force gravitationelle en cliquant sur l'écran.
+-Pour la formation d'une trou noir, sa masse doit etre trois fois plus grande que celle du soleil et avoir la taille necessaire. Ou bien on peut utiliser la formule de Schwarzschild radius donne dessous.
 
 `Rs = 2MG/c^2`
+
+-On sait que les trous noir perdent leur taille avec le temps selon la theoreme "Hawking Radiation". On sait aussi que les trous noirs ont une force gravitationelle tres forte. On a utilise les deux faits dans notre modelisation et on a fait pour que le modele ait une force gravitationelle ou l'utilisateur clique pour rendre une experience plus amusante.
 
 
 Membres du groupe:
