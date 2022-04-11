@@ -71,8 +71,7 @@ Apres les experiences on a comparé les resultats et on a vu que:
 - Quand on commence avec plus de étoiles, la probabilité qu'une trou noir assez grande se forme augmente.
 - Quand on augmente le nombre des étoiles crées chaque seconde, on attendais avoir une proba de trou noir plus grande mais on a vu le contraire. On a eu moins de trous noirs et moins de trous noirs assez grandes.
 - Quand on a augmenté la taille necessaire pour devenir trou noir,on a eu moins de trous noirs et on a observé un essai sans aucun trou noir.
-- 
-
+- Quand on a changé la duration de vie, on a eu des resultats qu'on attendais pas. On avait le hypothese que si les étoiles vivaient plus longue, le trou noir aurait plus des choses a "manger" et donc on aurait d'avantage des trous noir mais les resultats etaient le contriare. On a eu moins des trous noirs quand on a augmenté la vie et moins des trous noirs quand on l'a diminué.
 
 Membres du groupe:
 
