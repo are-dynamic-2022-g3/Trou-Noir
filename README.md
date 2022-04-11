@@ -56,6 +56,10 @@ Notre modélisation se base sur 4 paramètres:
 
 <a href="https://zupimages.net/viewer.php?id=22/15/rrun.png"><img src="https://zupimages.net/up/22/15/rrun.png" alt="" /></a>
 
+<a href="https://zupimages.net/viewer.php?id=22/15/97o5.png"><img src="https://zupimages.net/up/22/15/97o5.png" alt="" /></a>
+
+<a href="https://zupimages.net/viewer.php?id=22/15/ophx.png"><img src="https://zupimages.net/up/22/15/ophx.png" alt="" /></a>
+
 Membres du groupe:
 
 Can GENIS cangenis02@gmail.com                       
