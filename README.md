@@ -41,6 +41,10 @@ Notre modélisation se base sur 4 paramètres:
 
 -La masse volumique des étoiles
 
+-La duration des vies des étoiles
+
+-Le taux de fraye pour les étoiles
+
 # LES REGLES DANS NOTRE MODELISATION
 
 -Pour la formation d'une trou noir, sa masse doit etre trois fois plus grande que celle du soleil et avoir la taille necessaire. Ou bien on peut utiliser la formule de Schwarzschild radius donné dessous.
