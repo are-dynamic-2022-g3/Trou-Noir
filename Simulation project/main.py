@@ -4,6 +4,7 @@ from typing import List
 
 from vfx import *
 from body import *
+from data import *
 
 
 
@@ -85,6 +86,14 @@ def main():
   for _ in range(number_of_stars):
     bodies.append(create_star())
 
+  #===================================================================
+  #Data
+  data[DataType.NumberOfBlackHole] = [0]
+  data[DataType.NumberOfStars] = [number_of_stars]
+  data[DataType.BiggestBlackHole] = [0]
+  current_data[DataType.NumberOfBlackHole] = 0
+  current_data[DataType.NumberOfStars] = number_of_stars
+  current_data[DataType.BiggestBlackHole] = 0
 
   #===================================================================
   #Main loop
@@ -92,13 +101,21 @@ def main():
     ticks %= 60
     ticks += 1
     
+    if collect_data and ticks == 59:
+      data[DataType.NumberOfBlackHole].append(current_data[DataType.NumberOfBlackHole]) 
+      data[DataType.NumberOfStars].append(current_data[DataType.NumberOfStars])
+      data[DataType.BiggestBlackHole].append(current_data[DataType.BiggestBlackHole])
+
+      if len(data[DataType.BiggestBlackHole]) >= 1000:
+        run = False
+
     if visibilty:
       clock.tick(60)
+      cursors_body.position = Vector2(pygame.mouse.get_pos())
 
     if random() < spawn_rate:
       bodies.append(create_star())
-
-      cursors_body.position = Vector2(pygame.mouse.get_pos())
+      current_data[DataType.NumberOfStars] += 1
 
     #===================================================================
     #Handle events
@@ -137,6 +154,9 @@ def main():
       b.acceleration = Vector2(0, 0)
       other:Body
 
+      if b.type == BodyType.BLACKHOLE and b.mass/SIZE_TO_MASS_FACTOR > current_data[DataType.BiggestBlackHole]:
+        current_data[DataType.BiggestBlackHole] = b.mass/SIZE_TO_MASS_FACTOR
+
       if is_clicking and visibilty:
             b.apply_force_toward(cursors_body)
       for other in bodies:
@@ -173,8 +193,11 @@ def main():
         text = font.render(f'FPS : {int(clock.get_fps())}|N = {len(bodies)}', True, white, black)
       window.blit(text, textRect)
         
-        
+
       pygame.display.flip()
+    
+      
+  save_data()
 
 
 
