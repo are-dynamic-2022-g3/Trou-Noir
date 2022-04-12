@@ -1,4 +1,5 @@
 from random import randint, random
+from turtle import clear
 import pygame
 from typing import List
 
@@ -53,6 +54,7 @@ def create_star() -> Body:
 
 
 def main():
+  clear_data()
   #===================================================================
   #pygame initialisation
   if visibilty:
@@ -108,10 +110,10 @@ def main():
           bh += 1
         else:
           nb_stars += 1
-      data[DataType.NumberOfBlackHole].append(current_data[DataType.NumberOfBlackHole]) 
+      data[DataType.NumberOfBlackHole].append(bh) 
       data[DataType.NumberOfStars].append(nb_stars)
-      data[DataType.BiggestBlackHole].append(bh)
-
+      data[DataType.BiggestBlackHole].append(current_data[DataType.BiggestBlackHole])
+      print(f"{len(data[DataType.BiggestBlackHole])} seconds passed")
       if len(data[DataType.BiggestBlackHole]) >= 1000:
         run = False
 
@@ -171,7 +173,7 @@ def main():
           b.apply_force_toward(other)
 
           #Merge
-          if b.distance(other) < (b.gfx_size + other.gfx_size)/3:
+          if b.distance(other) < (b.gfx_size + other.gfx_size)/20:
             bigger, smaller = b, other
             if b.size < other.size:
               smaller, bigger = b, other
