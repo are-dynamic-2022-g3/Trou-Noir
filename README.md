@@ -70,15 +70,15 @@ On a choisi les parametres suivants:
 
 -Apres avoir fait notre modele, on a joué avec les parametres pour préciser les variations possibles.
 
-<a href="https://zupimages.net/viewer.php?id=22/15/rrun.png"><img src="https://zupimages.net/up/22/15/rrun.png" alt="" /></a>
+<a href="https://zupimages.net/viewer.php?id=22/15/m5ju.jpeg"><img src="https://zupimages.net/up/22/15/m5ju.jpeg" alt="" /></a>
 
-<a href="https://zupimages.net/viewer.php?id=22/15/youc.png"><img src="https://zupimages.net/up/22/15/youc.png" alt="" /></a>
+<a href="https://zupimages.net/viewer.php?id=22/15/s8y7.jpeg"><img src="https://zupimages.net/up/22/15/s8y7.jpeg" alt="" /></a>
 
-<a href="https://zupimages.net/viewer.php?id=22/15/acws.png"><img src="https://zupimages.net/up/22/15/acws.png" alt="" /></a>
+<a href="https://zupimages.net/viewer.php?id=22/15/t0tr.jpeg"><img src="https://zupimages.net/up/22/15/t0tr.jpeg" alt="" /></a>
 
-<a href="https://zupimages.net/viewer.php?id=22/15/a344.png"><img src="https://zupimages.net/up/22/15/a344.png" alt="" /></a>
+<a href="https://zupimages.net/viewer.php?id=22/15/mg6n.jpeg"><img src="https://zupimages.net/up/22/15/mg6n.jpeg" alt="" /></a>
 
-<a href="https://zupimages.net/viewer.php?id=22/15/0j0r.png"><img src="https://zupimages.net/up/22/15/0j0r.png" alt="" /></a>
+<a href="https://zupimages.net/viewer.php?id=22/15/r266.jpeg"><img src="https://zupimages.net/up/22/15/r266.jpeg" alt="" /></a>
 
 
 On a comparé tous nos expériences par rapport aux parametres précedents:
