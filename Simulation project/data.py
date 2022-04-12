@@ -11,6 +11,7 @@ data = {}
 
 def save_data():
   global data
+  
   data_json = None
   with open("data.json", 'r') as f:
     data_json = json.load(f)
@@ -25,10 +26,13 @@ def save_data():
 
   data_json["data"][t] = data
 
+  
+  with open("data.json", 'w+') as f:
+    json.dump(data_json, f, indent=2)
+    json.dump(data_json, f, indent=2)
+    
+  
   data = {}
-
-  with open("data.json", 'w') as f:
-    json.dump(data_json, f, indent=4, sort_keys=True)
 
 def clear_data():
   data_json = {
