@@ -65,13 +65,13 @@ Notre modélisation se base sur 6 paramètres:
 
 <a href="https://zupimages.net/viewer.php?id=22/15/rrun.png"><img src="https://zupimages.net/up/22/15/rrun.png" alt="" /></a>
 
-<a href="https://zupimages.net/viewer.php?id=22/15/97o5.png"><img src="https://zupimages.net/up/22/15/97o5.png" alt="" /></a>
+<a href="https://zupimages.net/viewer.php?id=22/15/youc.png"><img src="https://zupimages.net/up/22/15/youc.png" alt="" /></a>
 
-<a href="https://zupimages.net/viewer.php?id=22/15/ophx.png"><img src="https://zupimages.net/up/22/15/ophx.png" alt="" /></a>
+<a href="https://zupimages.net/viewer.php?id=22/15/acws.png"><img src="https://zupimages.net/up/22/15/acws.png" alt="" /></a>
 
-<a href="https://zupimages.net/viewer.php?id=22/15/fasq.png"><img src="https://zupimages.net/up/22/15/fasq.png" alt="" /></a>
+<a href="https://zupimages.net/viewer.php?id=22/15/a344.png"><img src="https://zupimages.net/up/22/15/a344.png" alt="" /></a>
 
-<a href="https://zupimages.net/viewer.php?id=22/15/qx77.png"><img src="https://zupimages.net/up/22/15/qx77.png" alt="" /></a>
+<a href="https://zupimages.net/viewer.php?id=22/15/0j0r.png"><img src="https://zupimages.net/up/22/15/0j0r.png" alt="" /></a>
 
 Apres les experiences on a comparé les resultats et on a vu que:
 - Quand on commence avec plus d'étoiles, la probabilité qu'un trou noir assez grande se forme augmente.
