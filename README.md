@@ -1,4 +1,4 @@
-# Trou Noir
+# TROU NOIR
 
 Une simulation du cycle de vie de plusieurs étoiles sur des milliard d'années.
 
@@ -57,11 +57,12 @@ Notre modélisation se base sur 6 paramètres:
 
 
 
-<HTML>
-<BODY>
+   <HTML>
+   <BODY>
                               <IMG SRC="bhkısa_AdobeCreativeCloudExpress.gif">
-</BODY>
-</HTML>
+   </BODY>
+   </HTML>
+  
 
 
 
