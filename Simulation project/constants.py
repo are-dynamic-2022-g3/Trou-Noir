@@ -17,6 +17,7 @@ size_min, size_max = 12, 69 #Size with what the stars with spawn = randint(size_
 vmin, vmax = 0, 0 #Range of the initial velocity
 blur_movement = True #Visual effect
 blur_intesity = 128
+visibilty = False
 
 size_proportion_bh = .2 #Blackhole seem smaller than they are
 

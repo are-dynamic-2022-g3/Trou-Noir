@@ -54,9 +54,10 @@ def create_star() -> Body:
 def main():
   #===================================================================
   #pygame initialisation
-  pygame.init()
-  window = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-  clock = pygame.time.Clock()
+  if visibilty:
+    pygame.init() 
+    window = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+    clock = pygame.time.Clock()
 
   #===================================================================
   #Variables
@@ -66,16 +67,17 @@ def main():
   cursors_body:Body = Body(mass = 1e15)
   ticks = 0
 
-  font = pygame.font.Font('freesansbold.ttf', 16)
-  
-  text = font.render(f'FPS : N/A', True, green, blue)
-  textRect = text.get_rect()
-  textRect.center = (50, 20)
+  if visibilty:
+    font = pygame.font.Font('freesansbold.ttf', 16)
+    
+    text = font.render(f'FPS : N/A', True, green, blue)
+    textRect = text.get_rect()
+    textRect.center = (50, 20)
 
-  
-  background:Background = Background('milky2.png', [0,0])
+    
+    background:Background = Background('milky2.png', [0,0])
 
-  window.set_colorkey(black)
+    window.set_colorkey(black)
 
   
   #===================================================================
@@ -90,33 +92,35 @@ def main():
     ticks %= 60
     ticks += 1
     
-    clock.tick(60)
+    if visibilty:
+      clock.tick(60)
 
     if random() < spawn_rate:
       bodies.append(create_star())
 
-    cursors_body.position = Vector2(pygame.mouse.get_pos())
+      cursors_body.position = Vector2(pygame.mouse.get_pos())
 
     #===================================================================
     #Handle events
-    for event in pygame.event.get():
-      #Quit
-      if event.type == pygame.QUIT or (event.type == pygame.KEYUP and event.key == pygame.K_ESCAPE): 
-        run = False
+    if visibilty:
+      for event in pygame.event.get():
+        #Quit
+        if event.type == pygame.QUIT or (event.type == pygame.KEYUP and event.key == pygame.K_ESCAPE): 
+          run = False
 
-      #Holding right click
-      if event.type == pygame.MOUSEBUTTONDOWN: 
-        is_clicking = True
-      if event.type == pygame.MOUSEBUTTONUP:
-        is_clicking = False
+        #Holding right click
+        if event.type == pygame.MOUSEBUTTONDOWN: 
+          is_clicking = True
+        if event.type == pygame.MOUSEBUTTONUP:
+          is_clicking = False
 
     #window.blit(BackGround.image, BackGround.rect) #fills the background with image
-
-    if blur_movement:
-      fade_screen(window, background = background, alpha=blur_intesity)
-    else:
-      window.fill((0, 0, 0))
-      
+    if visibilty:
+      if blur_movement:
+        fade_screen(window, background = background, alpha=blur_intesity)
+      else:
+        window.fill((0, 0, 0))
+        
     
 
     #===================================================================
@@ -133,7 +137,7 @@ def main():
       b.acceleration = Vector2(0, 0)
       other:Body
 
-      if is_clicking:
+      if is_clicking and visibilty:
             b.apply_force_toward(cursors_body)
       for other in bodies:
         if b != other and b.distance(other) < (b.mass//SIZE_TO_MASS_FACTOR + other.mass//SIZE_TO_MASS_FACTOR) * 5:
@@ -159,16 +163,18 @@ def main():
         bodies.remove(b)
         continue
       apply_edge(b)
-      draw_body(window, b)
+      if visibilty:
+        draw_body(window, b)
 
     #===================================================================
     #Show fps 
-    if ticks%20 == 1:
-      text = font.render(f'FPS : {int(clock.get_fps())}|N = {len(bodies)}', True, white, black)
-    window.blit(text, textRect)
-      
-      
-    pygame.display.flip()
+    if visibilty:
+      if ticks%20 == 1:
+        text = font.render(f'FPS : {int(clock.get_fps())}|N = {len(bodies)}', True, white, black)
+      window.blit(text, textRect)
+        
+        
+      pygame.display.flip()
 
 
 
