@@ -18,6 +18,7 @@ vmin, vmax = 0, 0 #Range of the initial velocity
 blur_movement = True #Visual effect
 blur_intesity = 128
 visibilty = False
+collect_data = True
 
 size_proportion_bh = .2 #Blackhole seem smaller than they are
 

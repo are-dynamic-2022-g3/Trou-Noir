@@ -3,6 +3,7 @@ from pygame import *
 
 from constants import *
 from operation import *
+from data import *
 
 class BodyType():
     STAR = 0
@@ -23,7 +24,6 @@ class Body():
         self.gfx_color = white
         self.type:int = type
         self.lifespan:int = 0
-
 
     def update(self, delta:float) -> None:
         """Update the body velocity, gfx size, and position"""
@@ -46,7 +46,6 @@ class Body():
             self.mass *= .9997
 
             self.size = self.mass // SIZE_TO_MASS_FACTOR
-
             
     def apply_force_toward(self, other:super) -> None:
         """Apply force toward another body"""
@@ -55,10 +54,12 @@ class Body():
         self.acceleration.x += vec.x * force
         self.acceleration.y += vec.y * force
 
-
     def kill(self):
         self.size = 0
-
+        if self.type == BodyType.BLACKHOLE:
+            current_data[DataType.NumberOfBlackHole] -= 1
+        else:
+            current_data[DataType.NumberOfStars] -= 1
 
     def become_redgiant(self):
         self.type = BodyType.REDGIANT
@@ -66,21 +67,20 @@ class Body():
         self.color = new_color_RG
         self.lifespan = 0
 
-
     def become_red_super_giant(self):
         self.type = BodyType.REDSUPERGIANT
         new_color_RSG = randint(235, 255), randint(115, 140), 0
         self.color = new_color_RSG
         self.lifespan = 0
 
-
     def become_blachole(self):
         self.type = BodyType.BLACKHOLE
         new_color_BH = randint(102, 127), randint(18, 24), randint(16, 23) #black hole color = red
         self.color = new_color_BH 
         self.lifespan = -1
-
-
+        current_data[DataType.NumberOfBlackHole] += 1
+        current_data[DataType.NumberOfStars] -= 1
+        
     def become_whitedwarf(self):
         self.type = BodyType.WHITEDWARF 
         new_color_WD = randint(200, 255), 255 , 255 #white dwarf color = white
@@ -88,7 +88,6 @@ class Body():
         self.size = size_to_whitedwarf
         self.mass /= 8
         self.lifespan = 0
-
 
     def evolve(self):
         if self.type == BodyType.REDSUPERGIANT:
@@ -101,9 +100,6 @@ class Body():
             self.become_red_super_giant()
         else:
             self.become_redgiant()
-                    
-            
-
 
     def distance(self, other:super) -> float:
         return (other.position - self.position).length()
