@@ -53,6 +53,7 @@ def create_star() -> Body:
 
 
 def main():
+  clear_data()
   #===================================================================
   #pygame initialisation
   if visibilty:

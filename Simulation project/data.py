@@ -28,7 +28,7 @@ def save_data():
   data = {}
 
   with open("data.json", 'w') as f:
-    json.dump(data_json, f)
+    json.dump(data_json, f, indent=4, sort_keys=True)
 
 def clear_data():
   data_json = {
@@ -38,5 +38,5 @@ def clear_data():
   with open("data.json", 'w') as f:
     json.dump(data_json, f)
 
-    
+
      
