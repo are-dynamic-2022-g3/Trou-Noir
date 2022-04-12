@@ -70,7 +70,7 @@ Notre modélisation se base sur 6 paramètres:
 
 <a href="https://zupimages.net/viewer.php?id=22/15/plcb.jpg"><img src="https://zupimages.net/up/22/15/plcb.jpg" alt="" /></a>
 
-# PLUSIEURS EXPERIENCES
+# PLUSIEUReS EXPERIENCES
 
 On a choisi les parametres suivants:
 - Nobre d'étoiles créées au début: 12
