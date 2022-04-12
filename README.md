@@ -22,8 +22,9 @@ Notre hypothèse c'est qu'on ne va pas avoir un trou noir dans chaque galaxie ca
 
 Un trou noir est une région de l'espace dont le champ gravitationnel est si intense qu'il empêche toute forme de matière ou de rayonnement de s'en échapper. Un trou noir est créé après la mort d'une étoile très massive. Le noyau de l'étoile s'effondre sur lui-même, ce qui entraine l'expulsion des couches externes de l'étoile en une gigantesque explosion : une supernova. Tout le reste de la matière se concentre en un petit point appelé singularité. La gravité d'un trou noir est si forte qu'elle emprisonne tout – même la lumière.
 
+<img src="Spacetime_curvature_pillars.jpg">
 
-
+Spacetime_curvature_pillars.jpg
 
 # FORMATION DES ETOILES
 
