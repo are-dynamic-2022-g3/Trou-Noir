@@ -4,7 +4,7 @@ Une simulation du cycle de vie de plusieurs étoiles sur des milliard d'années.
 
 # INTRODUCTION
 
-Dans le cadre de l'ARE DYNAMIC, nous nous sommes conduits à mener un projet de modélisation sur un sujet que nous avons choisi. Ce dernier se porte sur la formation d'une galaxie constituée des plusieurs étoiles en débutant la modélisation. On va aussi étudier la formation des trous noirs dans différents environnements.
+Dans le cadre de l'ARE DYNAMIC, nous nous sommes conduits à mener un projet de modélisation sur un sujet que nous avons choisi. Ce dernier se porte sur la formation d'une galaxie constituée des plusieures étoiles en débutant la modélisation. On va aussi étudier la formation des trous noirs dans différents environnements.
 
 # THEME
 
