@@ -95,7 +95,7 @@ On a comparé tous nos expériences par rapport aux parametres précedents:
 </HTML>
   
   
-bhkısa_AdobeCreativeCloudExpress.gif
+
 
 
 Membres du groupe:
