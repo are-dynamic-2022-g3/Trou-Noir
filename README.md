@@ -89,9 +89,8 @@ On a comparé tous nos expériences par rapport aux parametres précedents:
 - Contrairement a la derniere experience, quand on a diminuée la durée de vie (5 secondes), on n'a pas eu autant de changement par rapport a la premiere experience.
 
 <HTML>
-<HEAD> <TITLE>Activity - Insert animated GIF to HTML</TITLE> </HEAD>
 <BODY>
-  <IMG SRC="bhkısa_AdobeCreativeCloudExpress.gif">
+                                          <IMG SRC="bhkısa_AdobeCreativeCloudExpress.gif">
 </BODY>
 </HTML>
   
