@@ -2,6 +2,14 @@
 
 Une simulation du cycle de vie de plusieurs étoiles sur des milliard d'années.
 
+   <HTML>
+   <BODY>
+                              <IMG SRC="bhkısa_AdobeCreativeCloudExpress.gif">
+   </BODY>
+   </HTML>
+  
+
+
 # INTRODUCTION
 
 Dans le cadre de l'ARE DYNAMIC, nous nous sommes conduits à mener un projet de modélisation sur un sujet que nous avons choisi. Ce dernier se porte sur la formation d'une galaxie constituée des plusieures étoiles en débutant la modélisation. On va aussi étudier la formation des trous noirs dans différents environnements.
@@ -61,15 +69,6 @@ Notre modélisation se base sur 6 paramètres:
 <a href="https://zupimages.net/viewer.php?id=22/15/lrjm.jpg"><img src="https://zupimages.net/up/22/15/lrjm.jpg" alt="" /></a>
 
 -On sait que les trous noirs perdent leur volume avec le temps selon la theoreme "Hawking Radiation". On sait aussi que les trous noirs ont une force gravitationelle très forte. On a utilisé ces deux faits dans notre modèle et on a ajouté une autre fonction qui permet l'utilisateur de créer un champs gravitionnel fort quand il clique pour rendre la simulation plus amusante.
-
-
-
-   <HTML>
-   <BODY>
-                              <IMG SRC="bhkısa_AdobeCreativeCloudExpress.gif">
-   </BODY>
-   </HTML>
-  
 
 
 
