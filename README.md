@@ -105,7 +105,7 @@ On a comparé tous nos expériences par rapport aux paramètres précedents:
 
 
 
-Membres du groupe:
+# MEMBRES DU GROUPE
 
 Can GENIS cangenis02@gmail.com                       
 Ali Can CEBI alicancebi9@gmail.com                     
