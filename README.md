@@ -88,6 +88,13 @@ On a comparé tous nos expériences par rapport aux parametres précedents:
 - Quand on a changé la durée de vie des étoiles simples, on a eu des resultats qu'on n'attendais pas. On avait l'hypothese que si les étoiles vivaient plus longue, le trou noir aurait plus d'objets célestes a "manger" et donc on aurait davantage des trous noirs mais les resultats etaient le contriare. On a eu moins des trous noirs quand on a augmenté la durée de vie (10 secondes). On en déduit que la formatition prend plus de temps qu'avant cependant elles s'agrandissent plus rapidement. 
 - Contrairement a la derniere experience, quand on a diminuée la durée de vie (5 secondes), on n'a pas eu autant de changement par rapport a la premiere experience.
 
+<HTML>
+<HEAD> <TITLE>Activity - Insert animated GIF to HTML</TITLE> </HEAD>
+<BODY>
+  <IMG SRC="https://hnet.com/video-to-gif/viewimage/20220412-00-39zJ17aTDjZDrCWK-VRwe6V-HNET">
+</BODY>
+</HTML>
+
 Membres du groupe:
 
 Can GENIS cangenis02@gmail.com                       
