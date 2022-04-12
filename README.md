@@ -33,7 +33,7 @@ Notre hypothèse c'est qu'on ne va pas avoir un trou noir dans chaque galaxie ca
 # ASPECTS TECHNIQUES
 Notre modélisation se base sur 6 paramètres:
 
--La taille des étoiles
+-Le volume des étoiles
 
 -La masse des étoiles
 
@@ -43,15 +43,15 @@ Notre modélisation se base sur 6 paramètres:
 
 -La durée de vie des étoiles
 
--Le taux de fraye pour les étoiles
+-Le taux d'apparition des étoiles
 
 # LES REGLES DANS NOTRE MODELISATION
 
--Pour la formation d'un trou noir, sa masse doit etre au moins trois fois plus grande que celle du soleil et avoir le volume necessaire. Ou bien, on peut utiliser la formule de Schwarzschild radius donné au-dessous.
+-Pour la formation d'un trou noir, sa masse doit etre au moins trois fois plus grande que celle du soleil et avoir un volume proportionnel. Ou bien, on peut utiliser la formule de Schwarzschild radius donné au-dessous.
 
 <a href="https://zupimages.net/viewer.php?id=22/15/lrjm.jpg"><img src="https://zupimages.net/up/22/15/lrjm.jpg" alt="" /></a>
 
--On sait que les trous noirs perdent leur volume avec le temps selon la theoreme "Hawking Radiation". On sait aussi que les trous noirs ont une force gravitationelle tres forte. On a utilise ces deux faits dans notre modelisation et on a fait pour que le modele ait une force gravitationelle ou l'utilisateur clique pour rendre une experience plus amusante.
+-On sait que les trous noirs perdent leur volume avec le temps selon la theoreme "Hawking Radiation". On sait aussi que les trous noirs ont une force gravitationelle tres forte. On a utilise ces deux faits dans notre modelisation et on a ajouté une autre fonction qui permet l'utilisateur de créer un champs gravitionnel fort quand il clique pour rendre la simulation plus amusante.
 
 
 
@@ -60,6 +60,13 @@ Notre modélisation se base sur 6 paramètres:
 <a href="https://zupimages.net/viewer.php?id=22/15/plcb.jpg"><img src="https://zupimages.net/up/22/15/plcb.jpg" alt="" /></a>
 
 # PLUSIEURS EXPERIENCES
+
+On a choisi les parametres suivants:
+- Nobre d'étoiles créées au début: 12
+- Taux d'apparition: 0.024
+- Volum min: 13  Volume max: 69
+- Durée de vie: 8 secondes
+- Volume nécessaires pour devenir trou noir: 55
 
 -Apres avoir fait notre modele, on a joué avec les parametres pour préciser les variations possibles.
 
@@ -73,12 +80,6 @@ Notre modélisation se base sur 6 paramètres:
 
 <a href="https://zupimages.net/viewer.php?id=22/15/0j0r.png"><img src="https://zupimages.net/up/22/15/0j0r.png" alt="" /></a>
 
-On a choisi les parametres suivants:
-- Nobre d'étoiles créées au début: 12
-- Taux d'apparition: 0.024
-- Volum min: 13  Volume max: 69
-- Durée de vie: 8 secondes
-- Volume nécessaires pour devenir trou noir: 55
 
 On a comparé tous nos expériences par rapport aux parametres précedents:
 - Quand on commence avec plus d'étoiles (jusqu'a 20), la probabilité qu'un trou noir assez grande se forme augmente.
