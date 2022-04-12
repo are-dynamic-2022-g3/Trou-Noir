@@ -81,10 +81,11 @@ On a choisi les parametres suivants:
 - Volume nécessaires pour devenir trou noir: 55
 
 On a comparé tous nos expériences par rapport aux parametres précedents:
-- Quand on commence avec plus d'étoiles, la probabilité qu'un trou noir assez grande se forme augmente.
-- Quand on augmente le nombre des étoiles créées chaque seconde, on attendais avoir une probabailité de trou noir plus grande mais on a vu le contraire. On a eu moins de trous noirs et moins de trous noirs assez grandes.
-- Quand on a augmenté le volume necessaire pour devenir trou noir, on a eu moins de trous noirs et on a observé des essais sans formation de trou noir.
-- Quand on a changé la durée de vie des étoiles simples, on a eu des resultats qu'on n'attendais pas. On avait l'hypothese que si les étoiles vivaient plus longue, le trou noir aurait plus d'objets célestes a "manger" et donc on aurait davantage des trous noirs mais les resultats etaient le contriare. On a eu moins des trous noirs quand on a augmenté la vie et moins des trous noirs quand on l'a diminuée.
+- Quand on commence avec plus d'étoiles (jusqu'a 20), la probabilité qu'un trou noir assez grande se forme augmente.
+- Quand on augmente le nombre d'étoiles créées chaque seconde (0.03), on attendais avoir une probabailité de trou noir plus grande mais on a vu le contraire. On a eu moins de trous noirs et moins de trous noirs assez grandes.
+- Quand on a augmenté le volume necessaire pour devenir trou noir (62), on a eu moins de trous noirs et on a observé des essais avec aucune formation de trou noir.
+- Quand on a changé la durée de vie des étoiles simples, on a eu des resultats qu'on n'attendais pas. On avait l'hypothese que si les étoiles vivaient plus longue, le trou noir aurait plus d'objets célestes a "manger" et donc on aurait davantage des trous noirs mais les resultats etaient le contriare. On a eu moins des trous noirs quand on a augmenté la durée de vie (10 secondes). On en déduit que la formatition prend plus de temps qu'avant cependant elles s'agrandissent plus rapidement. 
+- Contrairement a la derniere experience, quand on a diminuée la durée de vie (5 secondes), on n'a pas eu autant de changement par rapport a la premiere experience.
 
 Membres du groupe:
 
