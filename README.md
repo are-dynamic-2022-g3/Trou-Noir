@@ -18,11 +18,18 @@ Après notres recherche, nous nous sommes demandés la question suivante: Est-ce
 
 Notre hypothèse c'est qu'on ne va pas avoir un trou noir dans chaque galaxie car on doit avoir plusieurs parametres specifiques pour la création d'un trou noir.
 
+# QU'EST-CE QU'UN TROU NOIR?
+
+Un trou noir est une région de l'espace dont le champ gravitationnel est si intense qu'il empêche toute forme de matière ou de rayonnement de s'en échapper. Un trou noir est créé après la mort d'une étoile très massive. Le noyau de l'étoile s'effondre sur lui-même, ce qui entraine l'expulsion des couches externes de l'étoile en une gigantesque explosion : une supernova. Tout le reste de la matière se concentre en un petit point appelé singularité. La gravité d'un trou noir est si forte qu'elle emprisonne tout – même la lumière.
+
 
 
 
 # FORMATION DES ETOILES
--Au départ, on crée des étoiles avec des differentes caracteristiques.
+
+<a href="https://zupimages.net/viewer.php?id=22/13/wqrb.jpg"><img src="https://zupimages.net/up/22/13/wqrb.jpg" alt="" /></a>
+
+-Au départ, on crée des étoiles avec des differentes caractéristiques.
 
 -Dépendant du rayon et de la masse de l'étoile elle se transforme soit en red giant soit en red super giant.
 
@@ -30,7 +37,6 @@ Notre hypothèse c'est qu'on ne va pas avoir un trou noir dans chaque galaxie ca
 
 -Les red supergiants vont avoir une explosion supernovae et devenir soit une étoile neutron soit un trou noir.
 
-<a href="https://zupimages.net/viewer.php?id=22/13/wqrb.jpg"><img src="https://zupimages.net/up/22/13/wqrb.jpg" alt="" /></a>
 
 # ASPECTS TECHNIQUES
 Notre modélisation se base sur 6 paramètres:
