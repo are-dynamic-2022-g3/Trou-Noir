@@ -2,6 +2,14 @@
 
 Une simulation du cycle de vie de plusieurs étoiles sur des milliard d'années.
 
+   <HTML>
+   <BODY>
+                              <IMG SRC="bhkısa_AdobeCreativeCloudExpress.gif">
+   </BODY>
+   </HTML>
+  
+
+
 # INTRODUCTION
 
 Dans le cadre de l'ARE DYNAMIC, nous nous sommes conduits à mener un projet de modélisation sur un sujet que nous avons choisi. Ce dernier se porte sur la formation d'une galaxie constituée des plusieures étoiles en débutant la modélisation. On va aussi étudier la formation des trous noirs dans différents environnements.
@@ -34,9 +42,9 @@ Un trou noir est une région de l'espace dont le champ gravitationnel est si int
 
 -Dépendant du rayon et de la masse de l'étoile elle se transforme soit en red giant soit en red super giant.
 
--Avec le temps, les red giants vont mourir avec une explosion et devenir naine blanche.
+-Avec le temps, les red giants meurent avec une explosion et devenir naines blanches.
 
--Les red supergiants vont avoir une explosion supernovae et devenir soit une étoile neutron soit un trou noir.
+-Les red supergiants ont une explosion supernova et devenir soit une étoile neutron soit un trou noir.
 
 
 # ASPECTS TECHNIQUES
@@ -64,20 +72,11 @@ Notre modélisation se base sur 6 paramètres:
 
 
 
-   <HTML>
-   <BODY>
-                              <IMG SRC="bhkısa_AdobeCreativeCloudExpress.gif">
-   </BODY>
-   </HTML>
-  
-
-
-
 <a href="https://zupimages.net/viewer.php?id=22/15/a2xn.jpg"><img src="https://zupimages.net/up/22/15/a2xn.jpg" alt="" /></a>
 
 <a href="https://zupimages.net/viewer.php?id=22/15/plcb.jpg"><img src="https://zupimages.net/up/22/15/plcb.jpg" alt="" /></a>
 
-# PLUSIEUReS EXPERIENCES
+# PLUSIEURES EXPERIENCES
 
 On a choisi les parametres suivants:
 - Nobre d'étoiles créées au début: 12
@@ -100,7 +99,7 @@ On a choisi les parametres suivants:
 
 
 On a comparé tous nos expériences par rapport aux paramètres précedents:
-- Quand on commence avec plus d'étoiles (jusqu'a 20), la probabilité qu'un trou noir assez grande se forme augmente.
+- Quand on commence avec plus d'étoiles (jusqu'à 20), la probabilité qu'un trou noir assez grande se forme augmente.
 - Quand on augmente le nombre d'étoiles créées chaque seconde (0.03), on attendais avoir une probabailité de trou noir plus grande mais on a vu le contraire. On a eu moins de trous noirs.
 - Quand on a augmenté le volume necessaire pour devenir trou noir (62), on a eu moins de trous noirs et on a observé des essais avec aucune formation de trou noir.
 - Quand on a changé la durée de vie des étoiles simples, on a eu des resultats qu'on n'attendais pas. On avait l'hypothese que si les étoiles vivaient plus longue, le trou noir aurait plus d'objets célestes à "manger" et donc on aurait davantage des trous noirs mais les résultats étaient le contraire. On a eu moins de trous noirs quand on a augmenté la durée de vie (10 secondes). On en déduit que la formatition prend plus de temps qu'avant cependant elles s'agrandissent plus rapidement. 
