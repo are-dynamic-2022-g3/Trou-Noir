@@ -24,7 +24,7 @@ Un trou noir est une région de l'espace dont le champ gravitationnel est si int
 
 <img src="Spacetime_curvature_pillars.jpg">
 
-Spacetime_curvature_pillars.jpg
+
 
 # FORMATION DES ETOILES
 
