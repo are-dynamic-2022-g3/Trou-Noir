@@ -34,9 +34,9 @@ Un trou noir est une région de l'espace dont le champ gravitationnel est si int
 
 -Dépendant du rayon et de la masse de l'étoile elle se transforme soit en red giant soit en red super giant.
 
--Avec le temps, les red giants vont mourir avec une explosion et devenir naine blanche.
+-Avec le temps, les red giants meurent avec une explosion et devenir naines blanches.
 
--Les red supergiants vont avoir une explosion supernovae et devenir soit une étoile neutron soit un trou noir.
+-Les red supergiants ont une explosion supernova et devenir soit une étoile neutron soit un trou noir.
 
 
 # ASPECTS TECHNIQUES
