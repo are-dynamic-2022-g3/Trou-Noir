@@ -53,7 +53,6 @@ def create_star() -> Body:
 
 
 def main():
-  clear_data()
   #===================================================================
   #pygame initialisation
   if visibilty:
@@ -103,9 +102,15 @@ def main():
     ticks += 1
     
     if collect_data and ticks == 59:
+      bh, nb_stars = 0, 0
+      for b in bodies:
+        if b.type == BodyType.BLACKHOLE:
+          bh += 1
+        else:
+          nb_stars += 1
       data[DataType.NumberOfBlackHole].append(current_data[DataType.NumberOfBlackHole]) 
-      data[DataType.NumberOfStars].append(current_data[DataType.NumberOfStars])
-      data[DataType.BiggestBlackHole].append(current_data[DataType.BiggestBlackHole])
+      data[DataType.NumberOfStars].append(nb_stars)
+      data[DataType.BiggestBlackHole].append(bh)
 
       if len(data[DataType.BiggestBlackHole]) >= 1000:
         run = False
