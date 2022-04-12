@@ -73,7 +73,14 @@ Notre modélisation se base sur 6 paramètres:
 
 <a href="https://zupimages.net/viewer.php?id=22/15/0j0r.png"><img src="https://zupimages.net/up/22/15/0j0r.png" alt="" /></a>
 
-Apres les experiences on a comparé les resultats et on a vu que:
+On a choisi les parametres suivants:
+- Nobre d'étoiles créées au début: 12
+- Taux d'apparition: 0.024
+- Volum min: 13  Volume max: 69
+- Durée de vie: 8 secondes
+- Volume nécessaires pour devenir trou noir: 55
+
+On a comparé tous nos expériences par rapport aux parametres précedents:
 - Quand on commence avec plus d'étoiles, la probabilité qu'un trou noir assez grande se forme augmente.
 - Quand on augmente le nombre des étoiles créées chaque seconde, on attendais avoir une probabailité de trou noir plus grande mais on a vu le contraire. On a eu moins de trous noirs et moins de trous noirs assez grandes.
 - Quand on a augmenté le volume necessaire pour devenir trou noir, on a eu moins de trous noirs et on a observé des essais sans formation de trou noir.
