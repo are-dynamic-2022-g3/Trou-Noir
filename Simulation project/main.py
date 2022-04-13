@@ -173,7 +173,7 @@ def main():
           b.apply_force_toward(other)
 
           #Merge
-          if b.distance(other) < (b.gfx_size + other.gfx_size)/20:
+          if b.distance(other) < (b.gfx_size + other.gfx_size)/3:
             bigger, smaller = b, other
             if b.size < other.size:
               smaller, bigger = b, other
