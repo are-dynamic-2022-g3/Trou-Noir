@@ -86,23 +86,38 @@ On a choisi les parametres suivants:
 - Volume nécessaire pour devenir trou noir: 55
    
    <img src="basebh.png">
+   Nombre de trous noirs formés
    <img src="biggestbh.png">
+   Volume du plus grand trou noir
    <img src="nbetoilesbase.png">
+   Nombre d'étoiles présentes
 
 -Après avoir fini notre modèle, on a joué avec les paramètres pour préciser les variations possibles.
    
    <img src="bh2.png">
+   Nombre de trous noirs formés
    <img src="biggest2.png">
+   Volume du plus grand trou noir
    <img src="etoiles2.png">
+   Nombre d'étoiles présentes
    <img src="bh3.png">
+   Nombre de trous noirs formés
    <img src="biggest3.png">
+   Volume du plus grand trou noir
    <img src="etoiles3.png">
-   <img src="bh4s.png">
+   Nombre d'étoiles présentes
+   <img src="bh4ss.png">
+   Nombre de trous noirs formés
    <img src="bh4.png">
+   Volume du plus grand trou noir
    <img src="etoiles4.png">
+   Nombre d'étoiles présentes
    <img src="bh5.png">
+   Nombre de trous noirs formés
    <img src="biggest5.png">
+   Volume du plus grand trou noir
    <img src="etoiles5.png">
+   Nombre d'étoiles présentes
 
 
 On a comparé tous nos expériences par rapport aux paramètres précedents:
