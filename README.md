@@ -86,16 +86,8 @@ On a choisi les parametres suivants:
 - Volume nécessaire pour devenir trou noir: 55
 
 -Après avoir fini notre modèle, on a joué avec les paramètres pour préciser les variations possibles.
-
-<a href="https://zupimages.net/viewer.php?id=22/15/m5ju.jpeg"><img src="https://zupimages.net/up/22/15/m5ju.jpeg" alt="" /></a>
-
-<a href="https://zupimages.net/viewer.php?id=22/15/s8y7.jpeg"><img src="https://zupimages.net/up/22/15/s8y7.jpeg" alt="" /></a>
-
-<a href="https://zupimages.net/viewer.php?id=22/15/t0tr.jpeg"><img src="https://zupimages.net/up/22/15/t0tr.jpeg" alt="" /></a>
-
-<a href="https://zupimages.net/viewer.php?id=22/15/mg6n.jpeg"><img src="https://zupimages.net/up/22/15/mg6n.jpeg" alt="" /></a>
-
-<a href="https://zupimages.net/viewer.php?id=22/15/r266.jpeg"><img src="https://zupimages.net/up/22/15/r266.jpeg" alt="" /></a>
+   
+   <img src="Spacetime_curvature_pillars.jpg">
 
 
 On a comparé tous nos expériences par rapport aux paramètres précedents:
