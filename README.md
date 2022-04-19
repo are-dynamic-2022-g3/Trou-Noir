@@ -84,10 +84,25 @@ On a choisi les parametres suivants:
 - Volume min: 13  Volume max: 69
 - Durée de vie: 8 secondes
 - Volume nécessaire pour devenir trou noir: 55
+   
+   <img src="basebh.png">
+   <img src="biggestbh.png">
+   <img src="nbetoilesbase.png">
 
 -Après avoir fini notre modèle, on a joué avec les paramètres pour préciser les variations possibles.
    
-   <img src="basebh.png">
+   <img src="bh2.png">
+   <img src="biggest2.png">
+   <img src="etoiles2.png">
+   <img src="bh3.png">
+   <img src="biggest3.png">
+   <img src="etoiles3.png">
+   <img src="bh4s.png">
+   <img src="bh4.png">
+   <img src="etoiles4.png">
+   <img src="bh5.png">
+   <img src="biggest5.png">
+   <img src="etoiles5.png">
 
 
 On a comparé tous nos expériences par rapport aux paramètres précedents:
