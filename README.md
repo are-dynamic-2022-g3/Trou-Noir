@@ -87,7 +87,7 @@ On a choisi les parametres suivants:
 
 -Après avoir fini notre modèle, on a joué avec les paramètres pour préciser les variations possibles.
    
-   <img src="Spacetime_curvature_pillars.jpg">
+   <img src="basebh.png">
 
 
 On a comparé tous nos expériences par rapport aux paramètres précedents:
