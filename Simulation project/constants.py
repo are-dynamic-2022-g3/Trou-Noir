@@ -17,15 +17,15 @@ size_min, size_max = 12, 69 #Size with what the stars with spawn = randint(size_
 vmin, vmax = 0, 0 #Range of the initial velocity
 blur_movement = True #Visual effect
 blur_intesity = 128
-visibilty = True
-collect_data = False
+visibilty = False
+collect_data = True
 
 size_proportion_bh = .2 #Blackhole seem smaller than they are
 
 size_to_blackhole = 55
 size_to_whitedwarf = 5
 
-lifespan_limits = [480, 180, 180, -1, 300]
+lifespan_limits = [600, 180, 180, -1, 300]
 
 #STAR // REDGIANT // REDSUPERGIANT // BLACKHOLE // WHITEDWARF
 

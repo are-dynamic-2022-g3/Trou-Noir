@@ -54,7 +54,6 @@ def create_star() -> Body:
 
 
 def main():
-  clear_data()
   #===================================================================
   #pygame initialisation
   if visibilty:
@@ -113,11 +112,13 @@ def main():
       data[DataType.NumberOfBlackHole].append(bh) 
       data[DataType.NumberOfStars].append(nb_stars)
       data[DataType.BiggestBlackHole].append(current_data[DataType.BiggestBlackHole])
-      print(f"{len(data[DataType.BiggestBlackHole])} seconds passed")
+      s = len(data[DataType.BiggestBlackHole])
+      if s % 60 == 0 : print(f"{s//60} minutes passed")
       if len(data[DataType.BiggestBlackHole]) >= 1000:
         run = False
 
     if visibilty:
+      
       clock.tick(60)
       cursors_body.position = Vector2(pygame.mouse.get_pos())
 
@@ -173,7 +174,7 @@ def main():
           b.apply_force_toward(other)
 
           #Merge
-          if b.distance(other) < (b.gfx_size + other.gfx_size)/3:
+          if b.distance(other) < (b.gfx_size + other.gfx_size)/15:
             bigger, smaller = b, other
             if b.size < other.size:
               smaller, bigger = b, other
@@ -203,14 +204,9 @@ def main():
         
 
       pygame.display.flip()
-    
-      
+
   save_data()
 
-
-
-
-    
 
 if __name__ == '__main__':
   main()
