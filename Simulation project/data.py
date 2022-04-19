@@ -16,11 +16,8 @@ def save_data():
   with open("data.json", 'r') as f:
     data_json = json.load(f)
 
-  if "times" not in data_json:
-    data_json["times"] = 1
-    data["data"] = {}
-  else:
-    data_json["times"] += 1
+  
+  data_json["times"] += 1
 
   t = str(data_json["times"])  
 
@@ -28,7 +25,6 @@ def save_data():
 
   
   with open("data.json", 'w+') as f:
-    json.dump(data_json, f, indent=2)
     json.dump(data_json, f, indent=2)
     
   
