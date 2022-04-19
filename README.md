@@ -87,39 +87,55 @@ On a choisi les parametres suivants:
    
    <img src="basebh.png">
    Nombre de trous noirs formés
+   
    <img src="biggestbh.png">
    Volume du plus grand trou noir
+   
    <img src="nbetoilesbase.png">
    Nombre d'étoiles présentes
+   
+   
 
 -Après avoir fini notre modèle, on a joué avec les paramètres pour préciser les variations possibles.
    
    <img src="bh2.png">
    Nombre de trous noirs formés
+   
    <img src="biggest2.png">
    Volume du plus grand trou noir
+   
    <img src="etoiles2.png">
    Nombre d'étoiles présentes
+   
    <img src="bh3.png">
    Nombre de trous noirs formés
+   
    <img src="biggest3.png">
    Volume du plus grand trou noir
+   
    <img src="etoiles3.png">
    Nombre d'étoiles présentes
+   
    <img src="bh4ss.png">
    Nombre de trous noirs formés
+   
    <img src="bh4.png">
    Volume du plus grand trou noir
+   
    <img src="etoiles4.png">
    Nombre d'étoiles présentes
+   
    <img src="bh5.png">
    Nombre de trous noirs formés
+   
    <img src="biggest5.png">
    Volume du plus grand trou noir
+   
    <img src="etoiles5.png">
    Nombre d'étoiles présentes
 
 
+   
 On a comparé tous nos expériences par rapport aux paramètres précedents:
 - Quand on commence avec plus d'étoiles (jusqu'à 20), la probabilité qu'un trou noir assez grande se forme augmente.
 - Quand on augmente le nombre d'étoiles créées chaque seconde (0.03), on attendais avoir une probabailité de trou noir plus grande mais on a vu le contraire. On a eu moins de trous noirs.
